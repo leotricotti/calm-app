@@ -4,8 +4,8 @@ import styles from "../css/navbar.module.css";
 
 function NavbarLogo({ logo }) {
   return (
-    <div className={styles.navbarLogo}>
-      <img src={logo} alt="Company Logo" />
+    <div className={styles.logoContainer}>
+      <img className={styles.logo} src={logo} alt="Company Logo" />
     </div>
   );
 }
@@ -46,7 +46,7 @@ function NavMenu() {
 
 function Navbar() {
   return (
-    <header className={styles.navbar}>
+    <header className={styles.navbarContainer}>
       <NavbarLogo logo={logo} />
       <NavToggle />
       <NavMenu />
