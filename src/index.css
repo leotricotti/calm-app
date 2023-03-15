@@ -5,6 +5,7 @@ Fonts
 */
 
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300&display=swap');
 
 /*
 =============== 
@@ -17,6 +18,7 @@ Variables
     --clr-light: #fff;
     --clr-accent: #2f7ece;
     --font-family: 'IBM Plex Sans', sans-serif;
+    --ff-nav: 'Prompt', sans-serif;
 }
 
 /*
@@ -75,9 +77,4 @@ h3 {
 
 h4 {
     font-size: 0.875rem;
-}
-
-p {
-    margin-bottom: 1.25rem;
-    color: var(--clr-grey-5);
 }

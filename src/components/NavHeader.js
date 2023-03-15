@@ -4,9 +4,9 @@ import styles from "./navHeader.module.css";
 
 function NavbarLogo({ logo }) {
   return (
-    <div className={styles.logoContainer}>
+    <NavLink to={"/"} className={styles.logoContainer}>
       <img className={styles.logo} src={logo} alt="Company Logo" />
-    </div>
+    </NavLink>
   );
 }
 
@@ -41,8 +41,8 @@ function NavItem({ url, text }) {
 
 function NavMenu() {
   return (
-    <nav className={styles.nav}>
-      <ul className={styles.navList}>
+    <nav className={styles.navMenuContainer}>
+      <ul className={styles.navMenu}>
         <NavItem url="/" text="Overview" />
         <NavItem url="/payers" text="Employers & Payers" />
         <NavItem url="/providers" text="Providers" />

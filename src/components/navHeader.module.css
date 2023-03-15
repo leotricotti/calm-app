@@ -30,3 +30,22 @@
   margin-bottom: .125rem;
   border-radius: 1rem;
 }
+
+.navLink {
+  font-size: 1rem;
+  font-family: var(--ff-nav);
+  color: var(--clr-dark);
+}
+
+.navMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 7rem;
+  text-align: center;
+}
+
+.navItem:last-child {
+  background-color: aqua;
+}
