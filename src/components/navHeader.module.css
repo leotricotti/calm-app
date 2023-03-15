@@ -35,17 +35,32 @@
   font-size: 1rem;
   font-family: var(--ff-nav);
   color: var(--clr-dark);
+  font-weight: 300;
 }
 
 .navMenu {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
   padding: 0 7rem;
   text-align: center;
+  margin-top: 2rem;
 }
 
-.navItem:last-child {
-  background-color: aqua;
+.lastItem {
+  width: 10rem;
+  height: 2.5rem;
+  background-color: var(--clr-accent);
+  border-radius: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lastLink {
+  color: var(--clr-light);
+  font-family: var(--ff-nav);
+  font-size: .75rem;
+  font-weight: 300;
 }

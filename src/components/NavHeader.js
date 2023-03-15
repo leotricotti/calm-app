@@ -29,25 +29,35 @@ function Navbar() {
   );
 }
 
-function NavItem({ url, text }) {
-  return (
-    <li className={styles.navItem}>
-      <NavLink className={styles.navLink} to={url}>
-        {text}
-      </NavLink>
-    </li>
-  );
+function NavItem({ index, url, text }) {
+  if (index === 4) {
+    return (
+      <li className={styles.lastItem}>
+        <NavLink className={styles.lastLink} to={url} key={index}>
+          {text}
+        </NavLink>
+      </li>
+    );
+  } else {
+    return (
+      <li className={styles.navItem}>
+        <NavLink className={styles.navLink} to={url} key={index}>
+          {text}
+        </NavLink>
+      </li>
+    );
+  }
 }
 
 function NavMenu() {
   return (
     <nav className={styles.navMenuContainer}>
       <ul className={styles.navMenu}>
-        <NavItem url="/" text="Overview" />
-        <NavItem url="/payers" text="Employers & Payers" />
-        <NavItem url="/providers" text="Providers" />
-        <NavItem url="/press" text="Press" />
-        <NavItem url="/inquire" text="Request Information" />
+        <NavItem url="/" text="Overview" index={0} />
+        <NavItem url="/payers" text="Employers & Payers" index={1} />
+        <NavItem url="/providers" text="Providers" index={2} />
+        <NavItem url="/press" text="Press" index={3} />
+        <NavItem url="/inquire" text="Request Information" index={4} />
       </ul>
     </nav>
   );
