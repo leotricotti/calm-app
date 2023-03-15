@@ -1,7 +1,7 @@
-import Navbar from "../components/Navbar";
+import NavHeader from "../components/NavHeader";
 
 function Home() {
-  return <Navbar />;
+  return <NavHeader />;
 }
 
 export default Home;

@@ -4,6 +4,8 @@
   max-height: auto;
   padding: 1.25rem;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
@@ -11,19 +13,20 @@
 }
 
 .toggleContainer {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1rem;
+  height: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin: .75rem;
 }
 
 .toggleLine {
   display: inline;
-  width: 1rem;
+  width: .9rem;
   height: 2px;
   background-color: var(--clr-dark);
-  margin-bottom: 2px;
-  border-radius: 5rem;
+  margin-bottom: .125rem;
+  border-radius: 1rem;
 }

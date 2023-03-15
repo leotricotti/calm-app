@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import logo from "../assets/images/logo/navbar-logo.png";
-import styles from "../css/navbar.module.css";
+import styles from "./navHeader.module.css";
 
 function NavbarLogo({ logo }) {
   return (
@@ -16,6 +16,15 @@ function NavToggle() {
       <div className={styles.toggleLine} />
       <div className={styles.toggleLine} />
       <div className={styles.toggleLine} />
+    </div>
+  );
+}
+
+function Navbar() {
+  return (
+    <div className={styles.navbarContainer}>
+      <NavbarLogo logo={logo} />
+      <NavToggle />
     </div>
   );
 }
@@ -44,14 +53,13 @@ function NavMenu() {
   );
 }
 
-function Navbar() {
+function NavHeader() {
   return (
-    <header className={styles.navbarContainer}>
-      <NavbarLogo logo={logo} />
-      <NavToggle />
+    <header className={styles.navHeader}>
+      <Navbar logo={logo} />
       <NavMenu />
     </header>
   );
 }
 
-export default Navbar;
+export default NavHeader;
