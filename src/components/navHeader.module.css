@@ -2,10 +2,13 @@
   width: 100%;
   height: 7.92rem;
   max-height: auto;
+  background-color: var(--clr-light);
   padding: 1.25rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  z-index: 999;
 }
 
 .logo {
@@ -19,7 +22,15 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: .75rem;
+  margin: .95rem;
+}
+
+.toggleActive {
+  background: var(--clr-accent);
+  width: 3rem;
+  height: 3rem;
+  border-radius: .5rem;
+  margin-right: 0;
 }
 
 .toggleLine {
@@ -31,11 +42,19 @@
   border-radius: 1rem;
 }
 
+.toggleLineActive {
+  background-color: var(--clr-light);
+}
+
 .navLink {
   font-size: 1rem;
   font-family: var(--ff-nav);
   color: var(--clr-dark);
   font-weight: 300;
+}
+
+.navMenuContainer {
+  position: relative;
 }
 
 .navMenu {
@@ -65,35 +84,31 @@
   font-weight: 300;
 }
 
-
 .menuOpen {
-  animation: menuOpen .5s ease-in-out;
+  animation: menuOpen .2s linear;
 }
 
 @keyframes menuOpen {
   0% {
-    opacity: 0;
     transform: translateY(-100%);
   }
 
   100% {
-    opacity: 1;
     transform: translateY(0);
   }
 }
 
-.menuClose {
-  animation: menuOpen .5s ease-in-out;
+.menuClosed {
+  animation: menuClosed .3s ease-in-out;
+  transform: translateY(-120%);
 }
 
-@keyframes menuClose {
+@keyframes menuClosed {
   0% {
-    opacity: 1;
     transform: translateY(0);
   }
 
   100% {
-    opacity: 0;
-    transform: translateY(-100%);
+    transform: translateY(-120%);
   }
 }

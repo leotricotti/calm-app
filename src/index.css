@@ -14,11 +14,11 @@ Variables
 */
 
 :root {
-    --clr-dark: #333;
-    --clr-light: #fff;
-    --clr-accent: #2f7ece;
-    --font-family: 'IBM Plex Sans', sans-serif;
-    --ff-nav: 'Prompt', sans-serif;
+  --clr-dark: #333;
+  --clr-light: #fff;
+  --clr-accent: #2f7ece;
+  --font-family: 'IBM Plex Sans', sans-serif;
+  --ff-nav: 'Prompt', sans-serif;
 }
 
 /*
@@ -30,51 +30,56 @@ Variables
 *,
 ::after,
 ::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: var(--font-family);
-    background: var(--clr-light);
-    color: var(--clr-dark);
-    line-height: 1.250;
-    font-size: 0.875rem;
-    display: flex;
-    flex-direction: column;
+  font-family: var(--font-family);
+  background: var(--clr-light);
+  color: var(--clr-dark);
+  line-height: 1.250;
+  font-size: 0.875rem;
+  display: flex;
+  flex-direction: column;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
+}
+
+button {
+  background: transparent;
+  border: transparent;
 }
 
 h1,
 h2,
 h3,
 h4 {
-    letter-spacing: var(--spacing);
-    text-transform: capitalize;
-    line-height: 1.25;
-    margin-bottom: 0.75rem;
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
 }
 
 h1 {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 h2 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 h3 {
-    font-size: 1.25rem;
+  font-size: 1.25rem;
 }
 
 h4 {
-    font-size: 0.875rem;
+  font-size: 0.875rem;
 }

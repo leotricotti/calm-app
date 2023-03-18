@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../assets/images/logo/navbar-logo.png";
 import styles from "./navHeader.module.css";
@@ -11,21 +11,38 @@ function NavbarLogo({ logo }) {
   );
 }
 
-function NavToggle({ handleClick }) {
+function NavToggle({ handleClick, isOpen }) {
   return (
-    <button className={styles.toggleContainer} onClick={handleClick}>
-      <div className={styles.toggleLine} />
-      <div className={styles.toggleLine} />
-      <div className={styles.toggleLine} />
+    <button
+      className={`${styles.toggleContainer} ${
+        isOpen ? styles.toggleActive : ""
+      }`}
+      onClick={handleClick}
+    >
+      <div
+        className={`${styles.toggleLine} ${
+          isOpen ? styles.toggleLineActive : ""
+        }`}
+      />
+      <div
+        className={`${styles.toggleLine} ${
+          isOpen ? styles.toggleLineActive : ""
+        }`}
+      />
+      <div
+        className={`${styles.toggleLine} ${
+          isOpen ? styles.toggleLineActive : ""
+        }`}
+      />
     </button>
   );
 }
 
-function Navbar({ handleClick }) {
+function Navbar({ handleClick, isOpen }) {
   return (
     <div className={styles.navbarContainer}>
       <NavbarLogo logo={logo} />
-      <NavToggle handleClick={handleClick} />
+      <NavToggle handleClick={handleClick} isOpen={isOpen} />
     </div>
   );
 }
@@ -50,19 +67,25 @@ function NavItem({ index, url, text }) {
   }
 }
 
-function NavMenu({ isOpen }) {
+function NavMenu({ menuPosition }) {
   return (
-    isOpen && (
-      <nav className={`${isOpen ? styles.menuOpen : styles.menuClose}`}>
-        <ul className={styles.navMenu}>
-          <NavItem url="/" text="Overview" index={0} />
-          <NavItem url="/payers" text="Employers & Payers" index={1} />
-          <NavItem url="/providers" text="Providers" index={2} />
-          <NavItem url="/press" text="Press" index={3} />
-          <NavItem url="/inquire" text="Request Information" index={4} />
-        </ul>
-      </nav>
-    )
+    <nav className={`${styles.navMenuContainer} ${menuPosition}`}>
+      <ul className={styles.navMenu}>
+        <NavItem url="/" text="Overview" index={0} />
+        <NavItem url="/payers" text="Employers & Payers" index={1} />
+        <NavItem url="/providers" text="Providers" index={2} />
+        <NavItem url="/press" text="Press" index={3} />
+        <NavItem url="/inquire" text="Request Information" index={4} />
+      </ul>
+    </nav>
+  );
+}
+
+function NavMenuToggle({ isOpen }) {
+  return isOpen ? (
+    <NavMenu menuPosition={styles.menuOpen} />
+  ) : (
+    <NavMenu menuPosition={styles.menuClosed} />
   );
 }
 
@@ -75,8 +98,8 @@ function NavHeader() {
 
   return (
     <header className={styles.navHeader}>
-      <Navbar logo={logo} handleClick={handleClick} />
-      <NavMenu isOpen={isOpen} />
+      <Navbar logo={logo} handleClick={handleClick} isOpen={isOpen} />
+      <NavMenuToggle isOpen={isOpen} />
     </header>
   );
 }
