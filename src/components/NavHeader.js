@@ -69,8 +69,8 @@ function NavItem({ index, url, text }) {
 
 function NavMenu({ menuPosition }) {
   return (
-    <nav className={`${styles.navMenuContainer} ${menuPosition}`}>
-      <ul className={styles.navMenu}>
+    <nav className={styles.navMenuContainer}>
+      <ul className={`${styles.navMenu} ${menuPosition}`}>
         <NavItem url="/" text="Overview" index={0} />
         <NavItem url="/payers" text="Employers & Payers" index={1} />
         <NavItem url="/providers" text="Providers" index={2} />
@@ -83,9 +83,9 @@ function NavMenu({ menuPosition }) {
 
 function NavMenuToggle({ isOpen }) {
   return isOpen ? (
-    <NavMenu menuPosition={styles.menuOpen} />
+    <NavMenu menuPosition={styles.menuOpen} isOpen={isOpen} />
   ) : (
-    <NavMenu menuPosition={styles.menuClosed} />
+    <NavMenu menuPosition={styles.menuClosed} isOpen={isOpen} />
   );
 }
 
