@@ -64,3 +64,36 @@
   font-size: .75rem;
   font-weight: 300;
 }
+
+
+.menuOpen {
+  animation: menuOpen .5s ease-in-out;
+}
+
+@keyframes menuOpen {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.menuClose {
+  animation: menuOpen .5s ease-in-out;
+}
+
+@keyframes menuClose {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
