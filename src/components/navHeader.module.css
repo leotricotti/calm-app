@@ -53,17 +53,21 @@
 }
 
 .navMenuContainer {
-  position: relative;
+  height: 0;
 }
 
 .navMenu {
+  width: 100%;
+  height: auto;
+  background-color: var(--clr-light);
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
-  padding: 0 7rem;
+  padding: 0 7rem 2rem 7rem;
   text-align: center;
-  margin-top: 2rem;
+  position: relative;
+  z-index: 10;
 }
 
 .lastItem {
@@ -90,7 +94,7 @@
 
 @keyframes menuOpen {
   0% {
-    transform: translateY(-100%);
+    transform: translateY(-120%);
   }
 
   100% {
@@ -110,7 +114,5 @@
 
   100% {
     transform: translateY(-120%);
-    opacity: 0;
-
   }
 }

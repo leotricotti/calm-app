@@ -94,7 +94,7 @@ function NavMenuToggle({ isOpen, isLoaded }) {
 }
 
 function NavHeader() {
-  const [isOpen, setIsOpen] = useState(undefined);
+  const [isOpen, setIsOpen] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
 
   const handleClick = () => {
