@@ -85,7 +85,7 @@
 
 
 .menuOpen {
-  animation: menuOpen .2s linear;
+  animation: menuOpen .3s linear;
 }
 
 @keyframes menuOpen {
@@ -99,7 +99,7 @@
 }
 
 .menuClosed {
-  animation: menuClosed .3s ease-in-out;
+  animation: menuClosed .5s ease-in-out;
   transform: translateY(-120%);
 }
 
@@ -110,5 +110,7 @@
 
   100% {
     transform: translateY(-120%);
+    opacity: 0;
+
   }
 }

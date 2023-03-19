@@ -81,25 +81,31 @@ function NavMenu({ menuPosition }) {
   );
 }
 
-function NavMenuToggle({ isOpen }) {
-  return isOpen ? (
-    <NavMenu menuPosition={styles.menuOpen} isOpen={isOpen} />
-  ) : (
-    <NavMenu menuPosition={styles.menuClosed} isOpen={isOpen} />
-  );
+function NavMenuToggle({ isOpen, isLoaded }) {
+  if (!isLoaded) {
+    return null;
+  } else {
+    return isOpen ? (
+      <NavMenu menuPosition={styles.menuOpen} isOpen={isOpen} />
+    ) : (
+      <NavMenu menuPosition={styles.menuClosed} isOpen={isOpen} />
+    );
+  }
 }
 
 function NavHeader() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(undefined);
+  const [isLoaded, setIsLoaded] = useState(false);
 
   const handleClick = () => {
     setIsOpen(!isOpen);
+    setIsLoaded(true);
   };
 
   return (
     <header className={styles.navHeader}>
       <Navbar logo={logo} handleClick={handleClick} isOpen={isOpen} />
-      <NavMenuToggle isOpen={isOpen} />
+      <NavMenuToggle isOpen={isOpen} isLoaded={isLoaded} />
     </header>
   );
 }
