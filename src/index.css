@@ -17,6 +17,7 @@ Variables
   --clr-dark: #333;
   --clr-light: #fff;
   --clr-accent: #2f7ece;
+  --clr-heroText: #00458e;
   --font-family: 'IBM Plex Sans', sans-serif;
   --ff-nav: 'Prompt', sans-serif;
 }
@@ -56,30 +57,4 @@ a {
 button {
   background: transparent;
   border: transparent;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  letter-spacing: var(--spacing);
-  text-transform: capitalize;
-  line-height: 1.25;
-  margin-bottom: 0.75rem;
-}
-
-h1 {
-  font-size: 3rem;
-}
-
-h2 {
-  font-size: 2rem;
-}
-
-h3 {
-  font-size: 1.25rem;
-}
-
-h4 {
-  font-size: 0.875rem;
 }

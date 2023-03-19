@@ -1,0 +1,12 @@
+.titleContainer {
+  position: absolute;
+  top: 15rem;
+}
+
+.backgroundVideo {
+  height: 28.75rem;
+  position: relative;
+  top: -5rem;
+  right: 14rem;
+  opacity: .5;
+}
