@@ -1,6 +1,5 @@
 import heroImg from "../assets/images/hero/hero-img.jpg";
 import heroVideos from "../assets/images/hero/hero-video.mp4";
-import textData from "../assets/data/textData";
 import styles from "./heroSection.module.css";
 
 function Title({ title }) {
@@ -35,11 +34,11 @@ function HeroVideo({ video }) {
   );
 }
 
-function HeroSection() {
+function HeroSection({ id, title, text }) {
   return (
     <section className={styles.heroSection}>
-      <Title title={textData.title} />
-      <Text text={textData.text} />
+      <Title key={id} title={title} />
+      <Text key={id} text={text} />
       <HeroImg img={heroImg} />
       <HeroVideo video={heroVideos} />
     </section>
