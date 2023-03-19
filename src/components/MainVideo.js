@@ -1,15 +1,22 @@
+import { useState } from "react";
 import mainImage from "../assets/images/main-video/main-video.png";
 import styles from "./mainVideo.module.css";
 
-function MainImage({ image }) {
+function MainImage({ image, toggleOverlay }) {
   return (
-    <img src={image} alt="Main video" className={styles.backgroundImage} />
+    <button onClick={toggleOverlay}>
+      <img src={image} alt="Main video" className={styles.backgroundImage} />
+    </button>
   );
 }
 
-function YoutubeVideo() {
+function YoutubeVideo({ overlaVisible }) {
   return (
-    <div className={styles.youtubeVideo}>
+    <div
+      className={`${styles.youtubeVideo} ${
+        overlaVisible ? styles.youtubeVideoVisible : ""
+      }`}
+    >
       <iframe
         width="374"
         height="215"
@@ -22,21 +29,32 @@ function YoutubeVideo() {
   );
 }
 
-function Overlay() {
+function Overlay({ overlaVisible, toggleOverlay }) {
+  console.log(overlaVisible);
   return (
-    <div className={styles.overlay}>
-      <div className={styles.closeBtn} />
+    <div
+      className={`${styles.overlay} ${
+        overlaVisible ? styles.overlayVisible : ""
+      }`}
+    >
+      <button className={styles.closeBtn} onClick={toggleOverlay} />
     </div>
   );
 }
 
 function MainVideo() {
+  const [overlaVisible, setOverlayVisible] = useState(false);
+
+  const toggleOverlay = () => {
+    setOverlayVisible(!overlaVisible);
+  };
+
   return (
-    <div className={styles.mainVideo}>
-      <Overlay />
-      <MainImage image={mainImage} />
-      <YoutubeVideo />
-    </div>
+    <section className={styles.mainVideo}>
+      <Overlay toggleOverlay={toggleOverlay} overlaVisible={overlaVisible} />
+      <MainImage image={mainImage} toggleOverlay={toggleOverlay} />
+      <YoutubeVideo overlaVisible={overlaVisible} />
+    </section>
   );
 }
 
