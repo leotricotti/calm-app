@@ -1,12 +1,45 @@
 .titleContainer {
+  width: 100%;
   position: absolute;
-  top: 15rem;
+  top: 13rem;
+  z-index: 5;
+  padding: 0 .5rem;
+}
+
+.title {
+  color: var(--clr-heroText);
+  font-size: 1.875rem;
+  font-family: var(--ff-alternative);
+  font-weight: 500;
+  text-align: center;
+  line-height: 2.75rem;
+  margin: 1.875rem 0 .3125rem 0;
+}
+
+.textContainer {
+  width: 100%;
+  position: absolute;
+  top: 23.5rem;
+  z-index: 5;
+  padding: 0 .5rem;
+}
+
+.text {
+  color: var(--clr-heroText);
+  font-family: var(--ff-alternative);
+  font-size: 1.125rem;
+  text-align: center;
+  margin: 1.25rem 0 1.875rem 0;
+}
+
+.videoContainer {
+  width: 100%;
 }
 
 .backgroundVideo {
   height: 28.75rem;
   position: relative;
-  top: -5rem;
   right: 14rem;
   opacity: .5;
+  padding: 0 1rem;
 }

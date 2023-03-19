@@ -15,14 +15,16 @@ function Title({ index, title }) {
 function Text({ index, text }) {
   return (
     <div className={styles.textContainer}>
-      <p key={index}>{text}</p>
+      <p className={styles.text} key={index}>
+        {text}
+      </p>
     </div>
   );
 }
 
 function HeroVideo({ video }) {
   return (
-    <div className={styles.heroVideoContainer}>
+    <div className={styles.videoContainer}>
       <video className={styles.backgroundVideo} src={video} autoPlay muted />
     </div>
   );

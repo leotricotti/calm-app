@@ -47,7 +47,7 @@
 
 .navLink {
   font-size: 1rem;
-  font-family: var(--ff-nav);
+  font-family: var(--ff-alternative);
   color: var(--clr-dark);
   font-weight: 300;
 }
@@ -78,7 +78,7 @@
 
 .lastLink {
   color: var(--clr-light);
-  font-family: var(--ff-nav);
+  font-family: var(--ff-alternative);
   font-size: .75rem;
   font-weight: 300;
 }
