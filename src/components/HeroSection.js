@@ -24,9 +24,7 @@ function Text({ index, text }) {
 
 function HeroVideo({ video }) {
   return (
-    <div className={styles.videoContainer}>
-      <video className={styles.backgroundVideo} src={video} autoPlay muted />
-    </div>
+    <video className={styles.backgroundVideo} src={video} autoPlay muted />
   );
 }
 

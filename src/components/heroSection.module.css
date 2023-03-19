@@ -32,14 +32,10 @@
   margin: 1.25rem 0 1.875rem 0;
 }
 
-.videoContainer {
-  width: 100%;
-}
-
 .backgroundVideo {
   height: 28.75rem;
   position: relative;
-  right: 14rem;
+  right: 14.5rem;
   opacity: .5;
   padding: 0 1rem;
 }
