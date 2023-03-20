@@ -1,5 +1,4 @@
 import heroVideos from "../assets/images/hero/hero-video.mp4";
-import textData from "../assets/data/textData";
 import styles from "./heroSection.module.css";
 
 function Title({ index, title }) {
@@ -33,18 +32,14 @@ function HeroVideo({ video }) {
 }
 
 function HeroSection() {
-  const text = textData.map((data) => {
-    return data.heroText;
-  });
-
-  const title = textData.map((data) => {
-    return data.heroTitle;
-  });
-
   return (
     <section className={styles.heroSection}>
-      <Title title={title} />
-      <Text text={text} />
+      <Title title={"Connecting the dots for care of the mind and body"} />
+      <Text
+        text={
+          "Designed to support payers, plan sponsors, and providers, Calm Health offers evidence-based mental health programs and tools focused on anxiety and depression."
+        }
+      />
       <HeroVideo video={heroVideos} />
     </section>
   );
