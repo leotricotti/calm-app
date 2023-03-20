@@ -47,3 +47,7 @@
   border: transparent;
   overflow: clip
 }
+
+.youtubeVideoInactive {
+  display: none;
+}
