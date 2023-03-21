@@ -1,0 +1,18 @@
+.featuresListContainer {
+  width: 100%;
+  padding: 2.5rem .9375rem;
+}
+
+.featuresListIconContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.featuresListIcon {
+  width: 5rem;
+}
+
+.featureIcon {
+  width: 5rem;
+}
