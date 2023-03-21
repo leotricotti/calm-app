@@ -40,7 +40,7 @@ function NavToggle({ handleClick, isOpen }) {
 
 function Navbar({ handleClick, isOpen }) {
   return (
-    <div className={styles.navbarContainer}>
+    <div className={styles.navbar}>
       <NavbarLogo logo={logo} />
       <NavToggle handleClick={handleClick} isOpen={isOpen} />
     </div>
@@ -69,7 +69,7 @@ function NavItem({ index, url, text }) {
 
 function NavMenu({ menuPosition }) {
   return (
-    <nav className={styles.navMenuContainer}>
+    <div className={styles.navMenuContainer}>
       <ul className={`${styles.navMenu} ${menuPosition}`}>
         <NavItem url="/" text="Overview" index={0} />
         <NavItem url="/payers" text="Employers & Payers" index={1} />
@@ -77,7 +77,7 @@ function NavMenu({ menuPosition }) {
         <NavItem url="/press" text="Press" index={3} />
         <NavItem url="/inquire" text="Request Information" index={4} />
       </ul>
-    </nav>
+    </div>
   );
 }
 
@@ -103,10 +103,10 @@ function NavHeader() {
   };
 
   return (
-    <header className={styles.navHeader}>
+    <div className={styles.navHeaderContainer}>
       <Navbar logo={logo} handleClick={handleClick} isOpen={isOpen} />
       <NavMenuToggle isOpen={isOpen} isLoaded={isLoaded} />
-    </header>
+    </div>
   );
 }
 

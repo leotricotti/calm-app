@@ -4,7 +4,7 @@ import styles from "./mainVideo.module.css";
 
 function MainImage({ image, handleVideoPlay }) {
   return (
-    <button onClick={handleVideoPlay}>
+    <button onClick={handleVideoPlay} className={styles.playBtn}>
       <img src={image} alt="Main video" className={styles.backgroundImage} />
     </button>
   );
@@ -67,14 +67,14 @@ function MainVideo() {
   };
 
   return (
-    <section className={styles.mainVideo}>
+    <div className={styles.mainVideoContainer}>
       <Overlay
         handleVideoStop={handleVideoStop}
         overlayVisible={overlayVisible}
       />
       <MainImage image={mainImage} handleVideoPlay={handleVideoPlay} />
       <YoutubeVideo overlayVisible={overlayVisible} />
-    </section>
+    </div>
   );
 }
 

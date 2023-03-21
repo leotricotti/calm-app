@@ -33,7 +33,7 @@ function HeroVideo({ video }) {
 
 function HeroSection() {
   return (
-    <section className={styles.heroSection}>
+    <div className={styles.heroSectionContainer}>
       <Title title={"Connecting the dots for care of the mind and body"} />
       <Text
         text={
@@ -41,7 +41,7 @@ function HeroSection() {
         }
       />
       <HeroVideo video={heroVideos} />
-    </section>
+    </div>
   );
 }
 

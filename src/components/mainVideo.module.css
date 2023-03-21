@@ -1,3 +1,7 @@
+.playBtn {
+  background: transparent;
+}
+
 .backgroundImage {
   width: 100%;
   margin-bottom: 2.5rem;
@@ -51,4 +55,8 @@
 
 .youtubeVideoInactive {
   display: none;
+}
+
+.mainVideoContainer {
+  width: 100%;
 }

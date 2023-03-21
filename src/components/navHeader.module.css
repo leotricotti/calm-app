@@ -1,4 +1,4 @@
-.navbarContainer {
+.navbar {
   width: 100%;
   height: 7.92rem;
   background-color: var(--clr-light);
@@ -87,6 +87,9 @@
   font-weight: 300;
 }
 
+.navHeaderContainer {
+  width: 100%;
+}
 
 .menuOpen {
   animation: menuOpen .3s linear;
