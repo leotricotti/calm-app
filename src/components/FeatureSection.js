@@ -1,4 +1,4 @@
-import styles from "./featureLeft.module.css";
+import styles from "./featureSection.module.css";
 
 function FeatureImage({ img }) {
   return (
@@ -16,22 +16,35 @@ function FeatureTitle({ title }) {
   );
 }
 
-function FeatureDescription({ description }) {
+function FeatureDescription({ description, splitWord }) {
+  let paragraphs = [description];
+  if (description.includes(splitWord)) {
+    paragraphs = description.split(splitWord);
+  }
   return (
     <div className={styles.featureDescriptionContainer}>
-      <p className={styles.featureDescription}>{description}</p>
+      {paragraphs.map((paragraph, index) => (
+        <>
+          <p key={index} className={styles.featureDescription}>
+            {paragraph}
+          </p>
+          {index < paragraphs.length - 1 && <br />}
+        </>
+      ))}
     </div>
   );
 }
 
-function FeatureSection({ img, title, description }) {
-  return (
-    <div className={styles.featureSectionContainer}>
-      <FeatureImage img={img} />
-      <FeatureTitle title={title} />
-      <FeatureDescription description={description} />
-    </div>
-  );
+function FeatureSection({ data }) {
+  return data.map((d) => {
+    return (
+      <div key={d.id} className={styles.featureSectionContainer}>
+        <FeatureImage img={d.image} />
+        <FeatureTitle title={d.title} />
+        <FeatureDescription description={d.description} splitWord={"*"} />
+      </div>
+    );
+  });
 }
 
 export default FeatureSection;

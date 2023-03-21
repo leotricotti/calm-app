@@ -19,6 +19,8 @@ Variables
   --clr-accent: #2f7ece;
   --clr-heroText: #00458e;
   --clr-overlay: rgba(0, 0, 0, 0.9);
+  --clr-featureTitle: #280056;
+  --clr-featureDescription: #1a1a1a;
   --font-family: 'IBM Plex Sans', sans-serif;
   --ff-alternative: 'Prompt', sans-serif;
 }
