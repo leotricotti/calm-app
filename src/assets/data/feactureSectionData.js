@@ -12,7 +12,7 @@ const featureSectionData = [
     title:
       "Improve mental and physical health outcomes by providing access to enjoyable, evidence-based mental health content",
     description:
-      "Our mental health programs are written by licensed clinicians and narrated by the voices of Calm. The programs adhere to the principles of Cognitive Behavioral Therapy, Acceptance & Commitment Therapy, and Dialectical Behavioral Therapy. ",
+      "Our mental health programs are written by licensed clinicians and narrated by the voices of Calm. * The programs adhere to the principles of Cognitive Behavioral Therapy, Acceptance & Commitment Therapy, and Dialectical Behavioral Therapy. ",
   },
   {
     id: 3,
@@ -26,7 +26,7 @@ const featureSectionData = [
     image: require("../images/feature-section/feature-four.png"),
     title: "Enhance care plan adherence",
     description:
-      "Target concerns and encourage members to set goals, track medications and side effects, and easily share information with providers. Make it easier for members to stay on track.Target concerns and encourage members to set goals, track medications and side effects, and easily share information with providers. Make it easier for members to stay on track.",
+      "Target concerns and encourage members to set goals, track medications and side effects, and easily share information with providers. Make it easier for members to stay on track.",
   },
   {
     id: 5,

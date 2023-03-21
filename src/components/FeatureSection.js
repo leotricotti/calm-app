@@ -24,12 +24,9 @@ function FeatureDescription({ description, splitWord }) {
   return (
     <div className={styles.featureDescriptionContainer}>
       {paragraphs.map((paragraph, index) => (
-        <>
-          <p key={index} className={styles.featureDescription}>
-            {paragraph}
-          </p>
-          {index < paragraphs.length - 1 && <br />}
-        </>
+        <p key={index} className={styles.featureDescription}>
+          {paragraph}
+        </p>
       ))}
     </div>
   );
@@ -41,7 +38,11 @@ function FeatureSection({ data }) {
       <div key={d.id} className={styles.featureSectionContainer}>
         <FeatureImage img={d.image} />
         <FeatureTitle title={d.title} />
-        <FeatureDescription description={d.description} splitWord={"*"} />
+        <FeatureDescription
+          description={d.description}
+          splitWord={"*"}
+          index={d.id}
+        />
       </div>
     );
   });
