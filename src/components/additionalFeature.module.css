@@ -12,6 +12,32 @@
   text-align: center;
 }
 
-. .additionalFeatureContainer {
+.iconContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0 2rem;
+}
+
+.icon {
+  width: 5rem;
+  height: 5rem;
+}
+
+.title {
+  color: var(--clr-additionalFeatureTitle);
+  font-family: var(--ff-alternative);
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.875rem;
+  margin: 1.250rem 0;
+}
+
+.description {
+  font-weight: 400;
+}
+
+
+.additionalFeatureContainer {
   padding: 2.5rem .9375rem;
 }

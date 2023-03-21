@@ -14,7 +14,7 @@ function MainTitle() {
 function Icon({ icon }) {
   return (
     <div className={styles.iconContainer}>
-      <img src={icon} alt={icon} />
+      <img src={icon} alt={icon} className={styles.icon} />
     </div>
   );
 }
@@ -48,7 +48,6 @@ function AdditionalFeature({ data }) {
           </Fragment>
         );
       })}
-      ;
     </div>
   );
 }

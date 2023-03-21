@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import styles from "./featureSection.module.css";
 
 function FeatureImage({ img }) {
@@ -33,19 +34,23 @@ function FeatureDescription({ description, splitWord }) {
 }
 
 function FeatureSection({ data }) {
-  return data.map((d) => {
-    return (
-      <div key={d.id} className={styles.featureSectionContainer}>
-        <FeatureImage img={d.image} />
-        <FeatureTitle title={d.title} />
-        <FeatureDescription
-          description={d.description}
-          splitWord={"*"}
-          index={d.id}
-        />
-      </div>
-    );
-  });
+  return (
+    <div className={styles.featureSectionContainer}>
+      {data.map((d) => {
+        return (
+          <Fragment key={d.id}>
+            <FeatureImage img={d.image} />
+            <FeatureTitle title={d.title} />
+            <FeatureDescription
+              description={d.description}
+              splitWord={"*"}
+              index={d.id}
+            />
+          </Fragment>
+        );
+      })}
+    </div>
+  );
 }
 
 export default FeatureSection;

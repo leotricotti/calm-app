@@ -22,6 +22,7 @@ Variables
   --clr-featureTitle: #280056;
   --clr-featureDescription: #1a1a1a;
   --clr-additionalFeatureMainTitle: #280056;
+  --clr-additionalFeatureTitle: #00458e;
   --font-family: 'IBM Plex Sans', sans-serif;
   --ff-alternative: 'Prompt', sans-serif;
 }
@@ -44,7 +45,7 @@ body {
   font-family: var(--font-family);
   background: var(--clr-light);
   color: var(--clr-dark);
-  line-height: 1.250;
+  line-height: 1.250rem;
   font-size: 0.875rem;
   display: flex;
   flex-direction: column;
