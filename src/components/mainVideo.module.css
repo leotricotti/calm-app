@@ -38,7 +38,7 @@
 .youtubeVideo {
   width: 100%;
   position: absolute;
-  top: 25%;
+  top: 15rem;
   z-index: 999;
   opacity: 0;
   transition: all.5s ease-in-out;
@@ -51,10 +51,6 @@
 .youtubeVideo iframe {
   border: transparent;
   overflow: clip
-}
-
-.youtubeVideoInactive {
-  display: none;
 }
 
 .mainVideoContainer {

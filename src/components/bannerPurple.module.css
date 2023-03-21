@@ -1,0 +1,28 @@
+.bannerContainer {
+  width: 100%;
+  height: 13rem;
+  background-color: var(--clr-bannerBackground);
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bannerTitle {
+  color: var(--clr-light);
+  font-family: var(--ff-alternative);
+  font-size: 2.23rem;
+  font-weight: 400;
+  padding: 1.8725rem .625rem;
+}
+
+.bannerLink {
+  width: 13.5rem;
+  height: 2.875rem;
+  background: var(--clr-light);
+  border-radius: 3.125rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: .625rem 0 0;
+}
