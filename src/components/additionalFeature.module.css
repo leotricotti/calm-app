@@ -1,0 +1,17 @@
+.mainTitleContainer {
+  width: 100%;
+  margin: 1.250rem 0 .625rem;
+}
+
+.mainTitle {
+  color: var(--clr-additionalFeatureMainTitle);
+  font-family: var(--ff-alternative);
+  font-size: 2.1rem;
+  line-height: 3rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+. .additionalFeatureContainer {
+  padding: 2.5rem .9375rem;
+}

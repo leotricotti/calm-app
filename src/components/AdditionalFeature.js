@@ -1,11 +1,12 @@
+import { Fragment } from "react";
 import styles from "./additionalFeature.module.css";
 
 function MainTitle() {
   return (
     <div className={styles.mainTitleContainer}>
-      <h3 className={styles.mainTitle}>
+      <h2 className={styles.mainTitle}>
         Drive engagement with our easy-to-use platform
-      </h3>
+      </h2>
     </div>
   );
 }
@@ -35,14 +36,21 @@ function Description({ description }) {
 }
 
 function AdditionalFeature({ data }) {
-  return data.map((d) => {
-    return (
-      <div className={styles.additionalFeatureContainer}>
-        <MainTitle />
-        <Icon icon={d.icon} />
-        <Title title={d.title} />
-        <Description description={d.description} />
-      </div>
-    );
-  });
+  return (
+    <div className={styles.additionalFeatureContainer}>
+      <MainTitle />
+      {data.map((d) => {
+        return (
+          <Fragment key={d.id}>
+            <Icon icon={d.icon} />
+            <Title title={d.title} />
+            <Description description={d.description} />
+          </Fragment>
+        );
+      })}
+      ;
+    </div>
+  );
 }
+
+export default AdditionalFeature;

@@ -21,6 +21,7 @@ Variables
   --clr-overlay: rgba(0, 0, 0, 0.9);
   --clr-featureTitle: #280056;
   --clr-featureDescription: #1a1a1a;
+  --clr-additionalFeatureMainTitle: #280056;
   --font-family: 'IBM Plex Sans', sans-serif;
   --ff-alternative: 'Prompt', sans-serif;
 }
