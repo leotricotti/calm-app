@@ -1,3 +1,8 @@
+.additionalFeatureContainer {
+  width: 100%;
+  padding: 2.5rem .9375rem 4rem;
+}
+
 .mainTitleContainer {
   width: 100%;
   margin: 1.250rem 0 .625rem;
@@ -35,9 +40,4 @@
 
 .description {
   font-weight: 400;
-}
-
-
-.additionalFeatureContainer {
-  padding: 2.5rem .9375rem;
 }

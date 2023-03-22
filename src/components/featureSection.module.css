@@ -1,3 +1,7 @@
+.featureSectionContainer {
+  padding: 0 1.250rem;
+}
+
 .featureImageContainer {
   margin: auto;
 }
@@ -12,7 +16,7 @@
 }
 
 .featureTitle {
-  color: var(--clr-textLightBlue);
+  color: var(--clr-textDarkBlue);
   font-family: var(--ff-alternative);
   font-size: 1.5rem;
   font-weight: 400;
@@ -25,12 +29,4 @@
   font-size: 1rem;
   font-weight: 400;
   margin-bottom: 2rem;
-}
-
-/* .featureDescription:first-child {
-  margin-bottom: 1rem;
-} */
-
-.featureSectionContainer {
-  padding: 0 1.250rem;
 }
