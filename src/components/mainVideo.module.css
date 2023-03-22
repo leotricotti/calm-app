@@ -18,7 +18,7 @@
   top: 0;
   left: 0;
   background-color: var(--clr-overlay);
-  z-index: 999;
+  z-index: -20;
   opacity: 0;
   transition: all .5s ease-in-out;
   display: flex;
@@ -28,6 +28,7 @@
 .overlayVisible {
   opacity: 1;
   height: 100vh;
+  z-index: 999;
 }
 
 .closeBtn {

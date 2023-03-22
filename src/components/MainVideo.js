@@ -47,7 +47,7 @@ function MainVideo() {
   const [overlayVisible, setOverlayVisible] = useState(false);
   const stopVideo = () => {
     const video = document.querySelector("iframe");
-    video.src = video;
+    video.src = "https://www.youtube.com/embed/EFrgxYQJuw0";
   };
 
   useEffect(() => {
