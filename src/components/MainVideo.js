@@ -18,8 +18,6 @@ function YoutubeVideo({ overlayVisible }) {
       }`}
     >
       <iframe
-        width="374"
-        height="215"
         src="https://www.youtube.com/embed/EFrgxYQJuw0"
         title="YouTube video player"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -29,16 +27,20 @@ function YoutubeVideo({ overlayVisible }) {
   );
 }
 
-function Overlay({ overlayVisible, handleVideoStop }) {
+function Overlay({ overlayVisible, children }) {
   return (
     <div
       className={`${styles.overlay} ${
         overlayVisible ? styles.overlayVisible : ""
       }`}
     >
-      <button className={styles.closeBtn} onClick={handleVideoStop} />
+      {children}
     </div>
   );
+}
+
+function CloseButton({ handleVideoStop }) {
+  return <button className={styles.closeBtn} onClick={handleVideoStop} />;
 }
 
 function MainVideo() {
@@ -71,9 +73,11 @@ function MainVideo() {
       <Overlay
         handleVideoStop={handleVideoStop}
         overlayVisible={overlayVisible}
-      />
+      >
+        <CloseButton handleVideoStop={handleVideoStop} />
+        <YoutubeVideo overlayVisible={overlayVisible} />
+      </Overlay>
       <MainImage image={mainImage} handleVideoPlay={handleVideoPlay} />
-      <YoutubeVideo overlayVisible={overlayVisible} />
     </div>
   );
 }
