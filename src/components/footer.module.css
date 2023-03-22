@@ -38,3 +38,10 @@
   color: var(--clr-featureDescription);
   text-align: center;
 }
+
+@media(min-width: 480px) {
+  .footerNav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

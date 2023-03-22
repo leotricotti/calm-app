@@ -33,25 +33,30 @@ function FooterCopyright() {
 function Footer({ data }) {
   return (
     <div className={styles.footerContainer}>
-      <FooterTitle title="Company">
-        <FooterItem url="/" item="Overview" />
-        <FooterItem url="/payers" item="Employers & Payers" />
-        <FooterItem url="/providers" item="Providers" />
-        <FooterItem url="/press" item="Press" />
-      </FooterTitle>
-      <FooterTitle title="Solutions">
-        <FooterItem url="https://www.calm.com/es" item="Calm" />
-        <FooterItem url="https://business.calm.com/" item="Calm for Bussines" />
-        <FooterItem url="/" item="Calm Healt" />
-      </FooterTitle>
-      <FooterTitle title="More Information">
-        <FooterItem url="/learn-more" item="Request Information" />
-        <FooterItem url="https://rb.gy/nkxrpi" item="Request Information" />
-        <FooterItem
-          url="https://www.linkedin.com/company/calmhealth/"
-          item="Linkedln"
-        />
-      </FooterTitle>
+      <div className={styles.footerNav}>
+        <FooterTitle title="Company">
+          <FooterItem url="/" item="Overview" />
+          <FooterItem url="/payers" item="Employers & Payers" />
+          <FooterItem url="/providers" item="Providers" />
+          <FooterItem url="/press" item="Press" />
+        </FooterTitle>
+        <FooterTitle title="Solutions">
+          <FooterItem url="https://www.calm.com/es" item="Calm" />
+          <FooterItem
+            url="https://business.calm.com/"
+            item="Calm for Bussines"
+          />
+          <FooterItem url="/" item="Calm Healt" />
+        </FooterTitle>
+        <FooterTitle title="More Information">
+          <FooterItem url="/learn-more" item="Request Information" />
+          <FooterItem url="https://rb.gy/nkxrpi" item="Request Information" />
+          <FooterItem
+            url="https://www.linkedin.com/company/calmhealth/"
+            item="Linkedln"
+          />
+        </FooterTitle>
+      </div>
       <FooterCopyright />
     </div>
   );
