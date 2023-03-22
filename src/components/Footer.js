@@ -22,9 +22,11 @@ function FooterItem({ url, item }) {
 
 function FooterCopyright() {
   return (
-    <span className={styles.copyright}>
-      Copyright @ 2023 Calm. All rights reserved.
-    </span>
+    <div className={styles.copyrightContainer}>
+      <span className={styles.copyright}>
+        Copyright @ 2023 Calm. All rights reserved.
+      </span>
+    </div>
   );
 }
 

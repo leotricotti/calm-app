@@ -5,7 +5,7 @@ Fonts
 */
 
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400&display=swap');
 
 /*
 =============== 
@@ -23,7 +23,7 @@ Variables
   --clr-overlay: rgba(0, 0, 0, 0.9);
   --clr-featureDescription: #1a1a1a;
   --clr-bannerBackground: #592b9a;
-
+  --clr-footerBackground: #f2f2f2;
   --font-family: 'IBM Plex Sans', sans-serif;
   --ff-alternative: 'Prompt', sans-serif;
 }

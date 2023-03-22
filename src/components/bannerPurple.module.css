@@ -11,8 +11,8 @@
 .bannerTitle {
   color: var(--clr-light);
   font-family: var(--ff-alternative);
-  font-size: 2.23rem;
-  font-weight: 400;
+  font-size: 2.2rem;
+  font-weight: 300;
   padding: 1.8725rem .625rem;
 }
 
@@ -25,4 +25,5 @@
   justify-content: center;
   align-items: center;
   margin: .625rem 0 0;
+  font-weight: 500;
 }

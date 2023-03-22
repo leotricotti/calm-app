@@ -1,0 +1,40 @@
+.footerContainer {
+  width: 100%;
+  padding: 5rem .9375rem 2.5rem;
+  background: var(--clr-footerBackground)
+}
+
+.titleContainer {
+  width: 100%;
+  margin: 2.5rem 0 0;
+}
+
+.title {
+  font-family: var(--ff-alternative);
+  font-size: 1.125rem;
+  line-height: 2rem;
+  font-weight: 500;
+}
+
+.itemContainer {
+  margin: 1.250rem 0 0;
+}
+
+.item {
+  font-family: var(--ff-alternative);
+  color: var(--clr-dark);
+  font-size: .875rem;
+  font-weight: 300;
+}
+
+.copyrightContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 5rem 0 0;
+}
+
+.copyright {
+  color: var(--clr-featureDescription);
+  text-align: center;
+}
