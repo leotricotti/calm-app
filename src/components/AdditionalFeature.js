@@ -1,4 +1,3 @@
-import { Fragment } from "react";
 import styles from "./additionalFeature.module.css";
 
 function MainTitle() {
@@ -39,15 +38,17 @@ function AdditionalFeature({ data }) {
   return (
     <div className={styles.additionalFeatureContainer}>
       <MainTitle />
-      {data.map((d) => {
-        return (
-          <Fragment key={d.id}>
-            <Icon icon={d.icon} />
-            <Title title={d.title} />
-            <Description description={d.description} />
-          </Fragment>
-        );
-      })}
+      <div className={styles.gridContainer}>
+        {data.map((d) => {
+          return (
+            <div className={styles.gridItem} key={d.id}>
+              <Icon icon={d.icon} />
+              <Title title={d.title} />
+              <Description description={d.description} />
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }
