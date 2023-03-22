@@ -38,13 +38,13 @@ function FeaturesList({ data }) {
         }
       />
       {data.map((d) => (
-        <Fragment key={d.id}>
+        <div className={styles.flexContainer} key={d.id}>
           <FeatureListIcons icon={d.icon} alt={"Feature icon"} />
           <FeatureListDescription
             description={d.description}
             style={styles.restOfChilds}
           />
-        </Fragment>
+        </div>
       ))}
     </div>
   );
