@@ -8,6 +8,7 @@ import FeatureSection from "../components/FeatureSection";
 import AdditionalFeature from "../components/AdditionalFeature";
 import BannerPurple from "../components/BannerPurple";
 import FeaturesList from "../components/FeaturesList";
+import Footer from "../components/Footer";
 
 function Home() {
   return (
@@ -22,6 +23,7 @@ function Home() {
         text={"Request Information"}
       />
       <FeaturesList data={featureListData} />
+      <Footer />
     </>
   );
 }
