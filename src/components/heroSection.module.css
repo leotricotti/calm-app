@@ -38,7 +38,6 @@
   text-align: center;
   margin: 1.25rem 0 1.875rem;
   padding: 0 .625rem;
-
 }
 
 .videoContainer {
@@ -68,6 +67,8 @@
     font-weight: 300;
     word-spacing: -.5rem;
     line-height: 3.9375rem;
+    max-width: 728px;
+    margin: 0 auto;
   }
 
   .text {
@@ -75,6 +76,8 @@
     line-height: 1.9375rem;
     margin: .5rem 0 2.5rem;
     padding: 0 3.0625rem;
+    max-width: 728px;
+    margin: 0 auto;
   }
 }
 
@@ -90,7 +93,6 @@
   .text {
     font-size: 1.625rem;
     line-height: 1.9375rem;
-    margin: .5rem 0 2.5rem;
-    padding: 0 3.0625rem;
+    padding: 2rem 3.0625rem;
   }
 }
