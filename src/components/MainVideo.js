@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import mainImage from "../assets/images/main-video/main-video.png";
+import mainImageSmall from "../assets/images/main-video/main-image-small.png";
+import mainImageBig from "../assets/images/main-video/main-image-big.png";
 import styles from "./mainVideo.module.css";
 
 function MainImage({ image, handleVideoPlay }) {
@@ -44,11 +45,27 @@ function CloseButton({ handleVideoStop }) {
 }
 
 function MainVideo() {
+  const [backgroundImage, setBacgroundImage] = useState(false);
   const [overlayVisible, setOverlayVisible] = useState(false);
   const stopVideo = () => {
     const video = document.querySelector("iframe");
     video.src = "https://www.youtube.com/embed/EFrgxYQJuw0";
   };
+
+  useEffect(() => {
+    function handleResize() {
+      if (window.innerWidth > 767) {
+        setBacgroundImage(true);
+      } else {
+        setBacgroundImage(false);
+      }
+    }
+
+    window.addEventListener("resize", handleResize);
+
+    // cleanup
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   useEffect(() => {
     if (overlayVisible) {
@@ -77,7 +94,10 @@ function MainVideo() {
         <CloseButton handleVideoStop={handleVideoStop} />
         <YoutubeVideo overlayVisible={overlayVisible} />
       </Overlay>
-      <MainImage image={mainImage} handleVideoPlay={handleVideoPlay} />
+      <MainImage
+        image={`${backgroundImage ? mainImageBig : mainImageSmall}`}
+        handleVideoPlay={handleVideoPlay}
+      />
     </div>
   );
 }

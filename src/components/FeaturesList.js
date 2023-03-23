@@ -1,4 +1,3 @@
-import { Fragment } from "react";
 import logo from "../assets/images/features-list/logo.png";
 import styles from "./featuresList.module.css";
 
