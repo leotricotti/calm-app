@@ -1,4 +1,3 @@
-import { Fragment } from "react";
 import styles from "./featureSection.module.css";
 
 function FeatureImage({ img }) {
@@ -38,15 +37,17 @@ function FeatureSection({ data }) {
     <div className={styles.featureSectionContainer}>
       {data.map((d) => {
         return (
-          <Fragment key={d.id}>
+          <div className={styles.gridContainer} key={d.id}>
             <FeatureImage img={d.image} />
-            <FeatureTitle title={d.title} />
-            <FeatureDescription
-              description={d.description}
-              splitWord={"*"}
-              index={d.id}
-            />
-          </Fragment>
+            <div className={styles.gridItem}>
+              <FeatureTitle title={d.title} />
+              <FeatureDescription
+                description={d.description}
+                splitWord={"*"}
+                index={d.id}
+              />
+            </div>
+          </div>
         );
       })}
     </div>

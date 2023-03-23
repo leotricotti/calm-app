@@ -40,3 +40,36 @@
     margin-bottom: 2.5rem;
   }
 }
+
+@media(min-width: 768px) {
+  /* .gridContainer {
+    display: flex;
+
+    grid-template-columns: 1fr 288px;
+    gap: 2.5rem;
+    padding: 2.5rem 0;
+  } */
+
+  .gridContainer:nth-child(1n) {
+    display: grid;
+    grid-template-columns: 288px 1fr;
+    gap: 2.5rem;
+    padding: 2.5rem 0;
+  }
+
+  .gridContainer:nth-child(2n) {
+    display: flex;
+    flex-direction: row-reverse;
+    grid-template-columns: 1fr 288px;
+    gap: 2.5rem;
+    padding: 2.5rem 0;
+  }
+
+  .featureImageContainer {
+    margin: 0;
+  }
+
+  .featureImage {
+    padding: 0;
+  }
+}
