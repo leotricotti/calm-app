@@ -53,3 +53,9 @@
     padding-left: 3rem;
   }
 }
+
+@media(min-width: 992px) {
+  .footerNav {
+    max-width: 940px;
+  }
+}

@@ -60,3 +60,9 @@
     gap: 2rem;
   }
 }
+
+@media(min-width: 992px) {
+  .additionalFeatureContainer {
+    max-width: 940px;
+  }
+}

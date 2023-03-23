@@ -1,6 +1,6 @@
 .navHeaderContainer {
   width: 100%;
-  max-width: 728px;
+  max-width: 768px;
   margin: 0 auto;
 }
 
@@ -59,7 +59,7 @@
 }
 
 .navMenuContainer {
-  height: 0;
+  height: auto;
 }
 
 .navMenu {
@@ -128,5 +128,15 @@
     justify-content: space-around;
     padding: 1.25rem 0;
     margin: .625rem 0 0;
+  }
+}
+
+@media(min-width: 992px) {
+  .navHeaderContainer {
+    max-width: 980px;
+  }
+
+  .toggleContainer {
+    display: none;
   }
 }
