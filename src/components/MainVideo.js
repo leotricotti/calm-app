@@ -45,7 +45,7 @@ function CloseButton({ handleVideoStop }) {
 }
 
 function MainVideo() {
-  const [backgroundImage, setBacgroundImage] = useState(false);
+  const [backgroundImage, setBacgroundImage] = useState(true);
   const [overlayVisible, setOverlayVisible] = useState(false);
   const stopVideo = () => {
     const video = document.querySelector("iframe");
@@ -62,8 +62,6 @@ function MainVideo() {
     }
 
     window.addEventListener("resize", handleResize);
-
-    // cleanup
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
