@@ -1,13 +1,14 @@
 .heroSectionContainer {
   width: 100%;
+  position: relative;
 }
 
 .titleContainer {
   width: 100%;
   position: absolute;
-  top: 13rem;
+  top: 4rem;
   z-index: 5;
-  padding: 0 .5rem;
+  padding: 0 .625rem;
 }
 
 .title {
@@ -17,14 +18,14 @@
   font-weight: 300;
   text-align: center;
   line-height: 2.75rem;
-  margin: 1.875rem 0 .3125rem 0;
+  margin: 1.875rem 0 .625rem;
 }
 
 .textContainer {
   width: 100%;
   position: absolute;
-  top: 23.5rem;
   z-index: 5;
+  top: 15rem;
   padding: 0 .5rem;
 }
 
@@ -35,7 +36,9 @@
   font-weight: 200;
   line-height: 1.625rem;
   text-align: center;
-  margin: 1rem 0 0;
+  margin: 1.25rem 0 1.875rem;
+  padding: 0 .625rem;
+
 }
 
 .videoContainer {
@@ -55,7 +58,7 @@
 
 @media(min-width: 480px) {
   .titleContainer {
-    top: 8rem;
+    top: 1rem;
   }
 
   .title {
@@ -67,6 +70,23 @@
 
   .text {
     font-size: 1.5rem;
+    line-height: 1.9375rem;
+    margin: .5rem 0 2.5rem;
+    padding: 0 3.0625rem;
+  }
+}
+
+@media(min-width: 768px) {
+  .titleContainer {
+    top: 4rem;
+  }
+
+  .title {
+    font-size: 3.75rem;
+  }
+
+  .text {
+    font-size: 1.625rem;
     line-height: 1.9375rem;
     margin: .5rem 0 2.5rem;
     padding: 0 3.0625rem;

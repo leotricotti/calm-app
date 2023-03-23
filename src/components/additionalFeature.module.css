@@ -48,6 +48,10 @@
     padding: 0 3.7rem;
   }
 
+  .iconContainer {
+    justify-content: flex-start;
+  }
+
   .gridContainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
