@@ -1,5 +1,7 @@
 .additionalFeatureContainer {
   width: 100%;
+  max-width: 728px;
+  margin: auto;
   padding: 2.5rem .9375rem 4rem;
 }
 
@@ -57,5 +59,4 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
   }
-
 }

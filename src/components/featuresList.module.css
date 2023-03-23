@@ -1,5 +1,7 @@
 .featuresListContainer {
   width: 100%;
+  max-width: 728px;
+  margin: auto;
   padding: 2.5rem .9375rem;
 }
 
