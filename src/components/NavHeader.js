@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../assets/images/logo/navbar-logo.png";
 import styles from "./navHeader.module.css";
@@ -104,23 +104,8 @@ function NavMenuToggle({ isOpen, isLoaded }) {
 }
 
 function NavHeader() {
-  const [isOpen, setIsOpen] = useState(true);
-  const [isLoaded, setIsLoaded] = useState(true);
-
-  useEffect(() => {
-    function handleResize() {
-      if (window.innerWidth < 992) {
-        setIsOpen(false);
-        setIsLoaded(false);
-      } else {
-        setIsLoaded(true);
-        setIsOpen(true);
-      }
-    }
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  const [isOpen, setIsOpen] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(false);
 
   const handleClick = () => {
     setIsOpen(!isOpen);
