@@ -77,10 +77,12 @@ function NavItem({ index, url, text }) {
   }
 }
 
-function NavMenu({ menuPosition }) {
+function NavMenu({ isOpen }) {
   return (
     <div className={styles.navMenuContainer}>
-      <ul className={`${styles.navMenu} ${menuPosition}`}>
+      <ul
+        className={`${styles.navMenu} ${isOpen ? styles.navvMenuToggle : ""}`}
+      >
         <NavItem url="/" text="Overview" index={0} />
         <NavItem url="/payers" text="Employers & Payers" index={1} />
         <NavItem url="/providers" text="Providers" index={2} />
@@ -91,31 +93,21 @@ function NavMenu({ menuPosition }) {
   );
 }
 
-function NavMenuToggle({ isOpen, isLoaded }) {
-  if (!isLoaded) {
-    return null;
-  } else {
-    return isOpen ? (
-      <NavMenu menuPosition={styles.menuOpen} isOpen={isOpen} />
-    ) : (
-      <NavMenu menuPosition={styles.menuClosed} isOpen={isOpen} />
-    );
-  }
+function NavMenuToggle({ isOpen }) {
+  return <NavMenu isOpen={isOpen} />;
 }
 
 function NavHeader() {
   const [isOpen, setIsOpen] = useState(false);
-  const [isLoaded, setIsLoaded] = useState(false);
 
   const handleClick = () => {
     setIsOpen(!isOpen);
-    setIsLoaded(true);
   };
 
   return (
     <div className={styles.navHeaderContainer}>
       <Navbar logo={logo} handleClick={handleClick} isOpen={isOpen} />
-      <NavMenuToggle isOpen={isOpen} isLoaded={isLoaded} />
+      <NavMenuToggle isOpen={isOpen} />
     </div>
   );
 }

@@ -75,6 +75,12 @@
   text-align: center;
   position: relative;
   z-index: 10;
+  transform: translateY(-120%);
+  transition: all .3s ease-in;
+}
+
+.navvMenuToggle {
+  transform: translateY(0);
 }
 
 .lastItem {
@@ -94,7 +100,7 @@
   font-weight: 300;
 }
 
-.menuOpen {
+/* .menuOpen {
   animation: menuOpen .3s linear;
 }
 
@@ -121,7 +127,7 @@
   100% {
     transform: translateY(-120%);
   }
-}
+} */
 
 @media(min-width:768px) {
   .navMenu {
@@ -134,14 +140,11 @@
   .navMenu {
     width: 700px;
     padding: 0;
-    top: -5.3rem;
+    top: -2.2rem;
     left: 13rem;
     z-index: 999;
   }
 
-  .menuClosed {
-    transform: translateY(0);
-  }
 
   .toggleContainer {
     display: none;
