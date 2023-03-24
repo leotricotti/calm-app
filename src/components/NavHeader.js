@@ -59,8 +59,18 @@ function NavItem({ index, url, text }) {
   } else {
     return (
       <li className={styles.navItem}>
-        <NavLink className={styles.navLink} to={url} key={index}>
-          {text}
+        <NavLink
+          className={styles.navLink}
+          to={url}
+          key={index}
+          style={({ isActive }) => {
+            return {
+              color: isActive ? "var(--clr-accent)" : "var(--clr-dark)",
+              fontWeight: isActive ? "400" : "300",
+            };
+          }}
+        >
+          <span className={styles.linkHover}>{text}</span>
         </NavLink>
       </li>
     );
@@ -94,22 +104,22 @@ function NavMenuToggle({ isOpen, isLoaded }) {
 }
 
 function NavHeader() {
-  const [isOpen, setIsOpen] = useState(false);
-  const [isLoaded, setIsLoaded] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
+  const [isLoaded, setIsLoaded] = useState(true);
 
   useEffect(() => {
     function handleResize() {
-      if (window.innerWidth > 991) {
-        setIsOpen(true);
-        setIsLoaded(true);
-      } else {
-        setIsLoaded(false);
+      if (window.innerWidth < 992) {
         setIsOpen(false);
+        setIsLoaded(false);
+      } else {
+        setIsLoaded(true);
+        setIsOpen(true);
       }
     }
 
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    window.addEventListener("resize", handleResize());
+    return () => window.removeEventListener("resize", handleResize());
   }, []);
 
   const handleClick = () => {

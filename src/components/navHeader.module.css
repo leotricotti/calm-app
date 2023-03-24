@@ -1,7 +1,6 @@
 .navHeaderContainer {
   width: 100%;
-  max-width: 768px;
-  margin: 0 auto;
+  height: 7.92rem;
 }
 
 .navbar {
@@ -60,8 +59,7 @@
 }
 
 .navMenuContainer {
-  width: 100%;
-  height: 0;
+  height: auto;
 }
 
 .navMenu {
@@ -75,7 +73,7 @@
   padding: 0 7rem 2rem 7rem;
   text-align: center;
   position: relative;
-  z-index: 999;
+  z-index: 10;
 }
 
 .lastItem {
@@ -128,8 +126,6 @@
   .navMenu {
     flex-direction: row;
     justify-content: space-around;
-    padding: 1.25rem 0;
-    margin: .625rem 0 0;
   }
 }
 
@@ -140,15 +136,16 @@
 
   .lastItem {
     position: absolute;
-    top: -.8rem;
+    top: -.7rem;
     left: 32rem;
   }
 
   .navMenu {
     width: 420px;
     padding: 0;
-    top: -5.3rem;
+    top: -3.3rem;
     left: 18rem;
+    z-index: 999;
   }
 
   .toggleContainer {
