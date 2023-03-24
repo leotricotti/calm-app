@@ -59,6 +59,15 @@
   font-weight: 300;
 }
 
+.linkHover {
+  transition: all .2s ease-in;
+}
+
+.linkHover:hover {
+  color: var(--clr-dark);
+  font-weight: 300;
+}
+
 .navMenuContainer {
   height: auto;
 }
@@ -91,6 +100,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all .2s ease-in;
+}
+
+.lastItem:hover {
+  background-color: var(--clr-hoverHeader);
 }
 
 .lastLink {
@@ -99,35 +113,6 @@
   font-size: .75rem;
   font-weight: 300;
 }
-
-/* .menuOpen {
-  animation: menuOpen .3s linear;
-}
-
-@keyframes menuOpen {
-  0% {
-    transform: translateY(-120%);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
-
-.menuClosed {
-  animation: menuClosed .5s ease-in-out;
-  transform: translateY(-120%);
-}
-
-@keyframes menuClosed {
-  0% {
-    transform: translateY(0);
-  }
-
-  100% {
-    transform: translateY(-120%);
-  }
-} */
 
 @media(min-width:768px) {
   .navMenu {
@@ -144,7 +129,6 @@
     left: 13rem;
     z-index: 999;
   }
-
 
   .toggleContainer {
     display: none;
