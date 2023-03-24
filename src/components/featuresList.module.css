@@ -79,6 +79,16 @@
 
 @media(min-width: 992px) {
   .featuresListContainer {
-    max-width: 940px;
+    max-width: 950px;
+  }
+
+  .restOfChilds {
+    text-align: left;
+  }
+
+  .gridContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 8rem;
   }
 }

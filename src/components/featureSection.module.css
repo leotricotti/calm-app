@@ -31,39 +31,32 @@
   font-family: var(--ff-alternative);
   font-size: 1rem;
   font-weight: 300;
-  margin-bottom: 2rem;
+}
+
+.featureDescription:first-child {
+  margin: 0 0 2rem;
 }
 
 @media(min-width: 480px) {
   .featureTitle {
     font-size: 1.75rem;
   }
-
-  .featureDescription {
-    margin-bottom: 2.5rem;
-  }
 }
 
 @media(min-width: 768px) {
-  .gridContainer {
+  .flexContainer {
+    display: flex;
     gap: 2.5rem;
     padding: 2.5rem 0;
   }
 
-  .gridContainer:nth-child(1n) {
-    display: grid;
-    grid-template-columns: 288px 1fr;
+  .flexContainer:nth-child(1n) {
+    flex: 288px 1;
   }
 
-  .gridContainer:nth-child(2n) {
-    display: flex;
+  .flexContainer:nth-child(2n) {
+    flex: 1 288px;
     flex-direction: row-reverse;
-    grid-template-columns: 1fr 288px;
-  }
-
-  .gridItem {
-    width: 100%;
-    height: auto;
   }
 
   .featureImageContainer {
@@ -78,5 +71,9 @@
 @media(min-width: 992px) {
   .featureSectionContainer {
     max-width: 940px;
+  }
+
+  .flexItem {
+    width: 125%;
   }
 }

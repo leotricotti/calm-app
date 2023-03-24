@@ -65,4 +65,9 @@
   .additionalFeatureContainer {
     max-width: 940px;
   }
+
+  .gridContainer {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5rem;
+  }
 }

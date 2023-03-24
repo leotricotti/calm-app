@@ -37,9 +37,9 @@ function FeatureSection({ data }) {
     <div className={styles.featureSectionContainer}>
       {data.map((d) => {
         return (
-          <div className={styles.gridContainer} key={d.id}>
+          <div className={styles.flexContainer} key={d.id}>
             <FeatureImage img={d.image} />
-            <div className={styles.gridItem}>
+            <div className={styles.flexItem}>
               <FeatureTitle title={d.title} />
               <FeatureDescription
                 description={d.description}

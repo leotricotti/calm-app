@@ -36,15 +36,17 @@ function FeaturesList({ data }) {
           "Calm is the leading mental health brand with the #1 App for Sleep, Meditation and Relaxation™"
         }
       />
-      {data.map((d) => (
-        <div className={styles.flexContainer} key={d.id}>
-          <FeatureListIcons icon={d.icon} alt={"Feature icon"} />
-          <FeatureListDescription
-            description={d.description}
-            style={styles.restOfChilds}
-          />
-        </div>
-      ))}
+      <div className={styles.gridContainer}>
+        {data.map((d) => (
+          <div className={styles.flexContainer} key={d.id}>
+            <FeatureListIcons icon={d.icon} alt={"Feature icon"} />
+            <FeatureListDescription
+              description={d.description}
+              style={styles.restOfChilds}
+            />
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
