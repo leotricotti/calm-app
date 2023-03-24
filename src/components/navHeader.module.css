@@ -1,6 +1,8 @@
 .navHeaderContainer {
   width: 100%;
+  max-width: 940px;
   height: 7.92rem;
+  margin: auto;
 }
 
 .navbar {
@@ -130,20 +132,11 @@
 }
 
 @media(min-width: 992px) {
-  .navHeaderContainer {
-    max-width: 980px;
-  }
-
-  .lastItem {
-    position: absolute;
-    top: -.7rem;
-    left: 32rem;
-  }
 
   .navMenu {
-    width: 420px;
+    width: 700px;
     padding: 0;
-    top: -3.3rem;
+    top: -5.3rem;
     left: 18rem;
     z-index: 999;
   }
