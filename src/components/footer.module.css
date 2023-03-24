@@ -55,6 +55,7 @@
 @media(min-width: 480px) {
   .footerNav {
     display: flex;
+    justify-content: center;
     padding-left: 3rem;
   }
 }

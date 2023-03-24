@@ -11,6 +11,7 @@
   height: 100%;
   margin-bottom: 2.5rem;
   object-fit: cover;
+  cursor: pointer;
 }
 
 .overlay {
@@ -42,6 +43,8 @@
   position: absolute;
   top: 1rem;
   right: 1.5rem;
+  z-index: 999;
+  cursor: pointer;
 }
 
 .youtubeVideo {
@@ -59,7 +62,7 @@
   max-width: 58.6875rem;
   height: 100%;
   max-height: 33rem;
-  top: 0;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   border: transparent;
