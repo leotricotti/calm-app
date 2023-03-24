@@ -15,7 +15,6 @@
   align-items: center;
   position: relative;
   z-index: 999;
-  margin: 0 auto;
 }
 
 .logo {
@@ -132,12 +131,11 @@
 }
 
 @media(min-width: 992px) {
-
   .navMenu {
     width: 700px;
     padding: 0;
     top: -5.3rem;
-    left: 18rem;
+    left: 13rem;
     z-index: 999;
   }
 
