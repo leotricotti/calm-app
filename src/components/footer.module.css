@@ -16,7 +16,7 @@
 }
 
 .title {
-  font-family: var(--ff-alternative);
+  ;
   font-size: 1.125rem;
   line-height: 2rem;
   font-weight: 500;
@@ -29,7 +29,7 @@
 }
 
 .item {
-  font-family: var(--ff-alternative);
+  ;
   color: var(--clr-dark);
   font-size: .875rem;
   font-weight: 300;

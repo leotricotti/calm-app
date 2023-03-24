@@ -4,8 +4,7 @@ Fonts
 ===============
 */
 
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500.600;700&display=swap');
 
 /*
 =============== 
@@ -26,8 +25,8 @@ Variables
   --clr-featureDescription: #1a1a1a;
   --clr-bannerBackground: #592b9a;
   --clr-footerBackground: #f2f2f2;
-  --font-family: 'IBM Plex Sans', sans-serif;
-  --ff-alternative: 'Prompt', sans-serif;
+  --clr-payersBannerBackground: #e7f2ffb3;
+  --ff-primary: 'Prompt', sans-serif;
 }
 
 /*
@@ -45,7 +44,7 @@ Variables
 }
 
 body {
-  font-family: var(--font-family);
+  font-family: var(--ff-primary);
   background: var(--clr-light);
   color: var(--clr-dark);
   line-height: 1.250rem;
