@@ -2,8 +2,6 @@
   width: 100%;
   height: 43.75rem;
   background-color: var(--clr-payersBannerBackground);
-}
-
-.title {
-  font-size: 1.875rem;
+  display: flex;
+  flex-direction: column;
 }
