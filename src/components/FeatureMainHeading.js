@@ -1,7 +1,7 @@
 function FeatureMainHeading({ title }) {
   return (
     <div className="featuremMinHeadingContainer">
-      <h1 className="featureMainHeading">{title}</h1>
+      <h2 className="featureMainHeading">{title}</h2>
     </div>
   );
 }

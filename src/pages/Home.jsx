@@ -2,12 +2,12 @@ import featureSectionData from "../assets/data/feactureSectionData";
 import additionalFeatureData from "../assets/data/additionalFeatureData";
 import featureListData from "../assets/data/featureListData";
 import NavHeader from "../components/NavHeader";
-import HeroSection from "../components/HeroSection";
-import MainVideo from "../components/MainVideo";
-import FeatureSection from "../components/FeatureSection";
-import AdditionalFeature from "../components/AdditionalFeature";
+import HeroSection from "../components/Overview/HeroSection";
+import MainVideo from "../components/Overview/MainVideo";
+import FeatureSection from "../components/Overview/FeatureSection";
+import AdditionalFeature from "../components/Overview/AdditionalFeature";
 import BannerPurple from "../components/BannerPurple";
-import FeaturesList from "../components/FeaturesList";
+import FeaturesList from "../components/Overview/FeaturesList";
 import Footer from "../components/Footer";
 
 function Home() {

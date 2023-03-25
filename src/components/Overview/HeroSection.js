@@ -1,4 +1,4 @@
-import heroVideos from "../assets/images/hero/background-video.webm";
+import heroVideos from "../../assets/images/hero/background-video.webm";
 import styles from "./heroSection.module.css";
 
 function Title({ index, title }) {

@@ -1,17 +1,17 @@
 import payersFeatureListData from "../assets/data/payersFeatureListData";
 import NavHeader from "../components/NavHeader";
-import PayersBanner from "../components/PayersBanner";
-import PayersImagery from "../components/PayersImagery";
-import PayersFeatureList from "../components/PayersFeatureList";
+import BannerSection from "../components/Payers/BannerSection";
+import ImagerySection from "../components/Payers/ImagerySection";
+import FeatureList from "../components/Payers/FeatureList";
 import Footer from "../components/Footer";
 
 function Payers() {
   return (
     <div>
       <NavHeader />
-      <PayersBanner />
-      <PayersImagery />
-      <PayersFeatureList data={payersFeatureListData} />
+      <BannerSection />
+      <ImagerySection />
+      <FeatureList data={payersFeatureListData} />
       <Footer />
     </div>
   );

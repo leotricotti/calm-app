@@ -1,14 +1,5 @@
+import FeatureMainHeading from "../FeatureMainHeading";
 import styles from "./additionalFeature.module.css";
-
-function MainTitle() {
-  return (
-    <div className={styles.mainTitleContainer}>
-      <h2 className={styles.mainTitle}>
-        Drive engagement with our easy-to-use platform
-      </h2>
-    </div>
-  );
-}
 
 function Icon({ icon }) {
   return (
@@ -37,7 +28,7 @@ function Description({ description }) {
 function AdditionalFeature({ data }) {
   return (
     <div className={styles.additionalFeatureContainer}>
-      <MainTitle />
+      <FeatureMainHeading title="Drive engagement with our easy-to-use platform" />
       <div className={styles.gridContainer}>
         {data.map((d) => {
           return (

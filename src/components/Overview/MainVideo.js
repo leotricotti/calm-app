@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import mainImageSmall from "../assets/images/main-video/main-image-small.png";
-import mainImageBig from "../assets/images/main-video/main-image-big.png";
+import mainImageSmall from "../../assets/images/main-video/main-image-small.png";
+import mainImageBig from "../../assets/images/main-video/main-image-big.png";
 import styles from "./mainVideo.module.css";
 
 function MainImage({ image, handleVideoPlay }) {
