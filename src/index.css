@@ -67,14 +67,14 @@ button {
   border: transparent;
 }
 
-/* Heading */
+/* FeatureHeading */
 
-.mainHeadingContainer {
+.featureMainHeadingContainer {
   width: 100%;
   padding: 0 .625rem;
 }
 
-.mainHeading {
+.featureMainHeading {
   color: var(--clr-textLightBlue);
   font-size: 1.875rem;
   font-weight: 300;
@@ -83,14 +83,14 @@ button {
   margin: 1.875rem 1rem .625rem;
 }
 
-/* SubHeading */
+/* FeatureSubHeading */
 
-.subHeadingContainer {
+.featureSubHeadingContainer {
   width: 100%;
   padding: 0 .5rem;
 }
 
-.subHeading {
+.featureSubHeading {
   color: var(--clr-textLightBlue);
   font-size: 1.125rem;
   font-weight: 200;
