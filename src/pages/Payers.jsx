@@ -1,5 +1,6 @@
 import NavHeader from "../components/NavHeader";
 import PayersBanner from "../components/PayersBanner";
+import PayersImagery from "../components/PayersImagery";
 import Footer from "../components/Footer";
 
 function Payers() {
@@ -7,6 +8,7 @@ function Payers() {
     <div>
       <NavHeader />
       <PayersBanner />
+      <PayersImagery />
       <Footer />
     </div>
   );
