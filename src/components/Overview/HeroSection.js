@@ -27,7 +27,7 @@ function HeroSection() {
     <div className={styles.heroSectionContainer}>
       <MainHeading
         title={"Connecting the dots for care of the mind and body"}
-        className={""}
+        className={styles.overviewHeroSection}
       />
       <Text
         text={

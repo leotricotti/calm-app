@@ -1,9 +1,11 @@
 import styles from "./mainHeding.module.css";
 
-function MainHeading({ title, className }) {
+function MainHeading({ title, className, heading }) {
   return (
-    <div className={`${styles.mainnHeadingContainer} ${className}`}>
-      <h2 className={`${styles.mainHeading} ${className}`}>{title}</h2>
+    <div className={styles.mainHeadingContainer}>
+      <heading className={`${styles.mainHeading} ${className}`}>
+        {title}
+      </heading>
     </div>
   );
 }

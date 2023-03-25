@@ -5,19 +5,6 @@
   padding: 2.5rem .9375rem 4rem;
 }
 
-/* .mainTitleContainer {
-  width: 100%;
-  margin: 1.250rem 0 .625rem;
-}
-
-. {
-  color: var(--clr-textDarkBlue);
-  font-size: 2.1rem;
-  line-height: 3rem;
-  font-weight: 300;
-  text-align: center;
-} */
-
 .iconContainer {
   width: 100%;
   display: flex;
@@ -32,7 +19,6 @@
 
 .title {
   color: var(--clr-textLightBlue);
-  ;
   font-size: 1.5rem;
   font-weight: 300;
   line-height: 1.875rem;

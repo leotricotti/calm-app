@@ -1,13 +1,14 @@
-.featureMainHeadingContainer {
+.mainHeadingContainer {
   width: 100%;
   padding: 0 .625rem;
+  position: relative;
 }
 
-.featureMainHeading {
+.mainHeading {
   color: var(--clr-textLightBlue);
   font-size: 1.875rem;
   font-weight: 300;
   text-align: center;
   line-height: 2.75rem;
-  margin: 1.875rem 2rem .625rem;
+  margin: 1.875rem 1rem .625rem;
 }
