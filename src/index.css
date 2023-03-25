@@ -66,36 +66,3 @@ button {
   background: transparent;
   border: transparent;
 }
-
-/* FeatureHeading */
-
-.featureMainHeadingContainer {
-  width: 100%;
-  padding: 0 .625rem;
-}
-
-.featureMainHeading {
-  color: var(--clr-textLightBlue);
-  font-size: 1.875rem;
-  font-weight: 300;
-  text-align: center;
-  line-height: 2.75rem;
-  margin: 1.875rem 1rem .625rem;
-}
-
-/* FeatureSubHeading */
-
-.featureSubHeadingContainer {
-  width: 100%;
-  padding: 0 .5rem;
-}
-
-.featureSubHeading {
-  color: var(--clr-textLightBlue);
-  font-size: 1.125rem;
-  font-weight: 200;
-  line-height: 1.625rem;
-  text-align: center;
-  margin: 1.25rem 0 1.875rem;
-  padding: 0 .625rem;
-}

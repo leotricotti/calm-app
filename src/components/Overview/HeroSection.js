@@ -1,15 +1,6 @@
 import heroVideos from "../../assets/images/hero/background-video.webm";
+import MainHeading from "../MainHeading";
 import styles from "./heroSection.module.css";
-
-function Title({ index, title }) {
-  return (
-    <div className={styles.titleContainer}>
-      <h1 key={index} className={styles.title}>
-        {title}
-      </h1>
-    </div>
-  );
-}
 
 function Text({ index, text }) {
   return (
@@ -34,7 +25,10 @@ function HeroVideo({ video }) {
 function HeroSection() {
   return (
     <div className={styles.heroSectionContainer}>
-      <Title title={"Connecting the dots for care of the mind and body"} />
+      <MainHeading
+        title={"Connecting the dots for care of the mind and body"}
+        className={""}
+      />
       <Text
         text={
           "Designed to support payers, plan sponsors, and providers, Calm Health offers evidence-based mental health programs and tools focused on anxiety and depression."
