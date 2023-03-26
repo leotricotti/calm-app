@@ -1,5 +1,5 @@
 import heroVideos from "../../assets/images/hero/background-video.webm";
-import MainHeading from "../MainHeading";
+import { MainHeading } from "../Headings";
 import Paragraph from "../Paragraph";
 import styles from "./heroSection.module.css";
 

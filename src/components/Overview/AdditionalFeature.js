@@ -1,4 +1,4 @@
-import MainHeading from "../MainHeading";
+import { MainHeading } from "../Headings";
 import Paragraph from "../Paragraph";
 import styles from "./additionalFeature.module.css";
 

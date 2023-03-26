@@ -1,5 +1,5 @@
-import MainHeading from "../MainHeading";
-import SubHeading from "../SubHeading";
+import { MainHeading } from "../Headings";
+import { SubHeading } from "../Headings";
 import styles from "./bannerSection.module.css";
 
 function BannerSection() {

@@ -1,4 +1,4 @@
-import SubHeading from "../SubHeading";
+import { SubHeading } from "../Headings";
 import Paragraph from "../Paragraph";
 import styles from "./featureList.module.css";
 
