@@ -1,9 +1,9 @@
 import styles from "./paragraph.module.css";
 
-function Paragraph({ description, className }) {
+function Paragraph({ description, container, paragraph }) {
   return (
-    <div className={`${styles.paragraphContainer} ${className}`}>
-      <p className={styles.paragraph}>{description}</p>
+    <div className={`${styles.paragraph} ${container}`}>
+      <p className={`${styles.paragraph} ${paragraph}`}>{description}</p>
     </div>
   );
 }

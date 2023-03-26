@@ -1,4 +1,5 @@
 import MainHeading from "../MainHeading";
+import Paragraph from "../Paragraph";
 import styles from "./additionalFeature.module.css";
 
 function Icon({ icon }) {
@@ -9,36 +10,20 @@ function Icon({ icon }) {
   );
 }
 
-function Title({ title }) {
-  return (
-    <div className={styles.titleContainer}>
-      <h2 className={styles.title}>{title}</h2>
-    </div>
-  );
-}
-
-function Description({ description }) {
-  return (
-    <div className={styles.descriptionContainer}>
-      <p className={styles.description}>{description}</p>
-    </div>
-  );
-}
-
 function AdditionalFeature({ data }) {
   return (
     <div className={styles.additionalFeatureContainer}>
       <MainHeading
         title="Drive engagement with our easy-to-use platform"
-        className={styles.mainHeading}
+        style={styles.mainHeading}
       />
       <div className={styles.gridContainer}>
         {data.map((d) => {
           return (
             <div className={styles.gridItem} key={d.id}>
               <Icon icon={d.icon} />
-              <Title title={d.title} />
-              <Description description={d.description} />
+              <MainHeading title={d.title} className={styles.heading} />
+              <Paragraph description={d.description} />
             </div>
           );
         })}
