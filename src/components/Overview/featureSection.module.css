@@ -14,14 +14,21 @@
   padding: 2.5rem 0;
 }
 
-.featureDescription {
+.title {
+  color: var(--clr-textDarkBlue);
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.875rem;
+  margin-bottom: 1.875rem;
+}
+
+.paragraph {
   color: var(--clr-featureDescription);
-  ;
   font-size: 1rem;
   font-weight: 300;
 }
 
-.featureDescription:first-child {
+.paragraph:first-child {
   margin: 0 0 2rem;
 }
 

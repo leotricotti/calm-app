@@ -1,13 +1,11 @@
 .paragraphContainer {
   width: 100%;
-  padding: 0 .5rem;
   max-width: 728px;
   margin: 0 auto;
 }
 
-@media(min-width: 480px) {
+@media(min-width: 992px) {
   .paragraphContainer {
-    max-width: 728px;
-    margin: auto;
+    max-width: 940px;
   }
 }

@@ -15,7 +15,7 @@ function AdditionalFeature({ data }) {
     <div className={styles.additionalFeatureContainer}>
       <MainHeading
         title="Drive engagement with our easy-to-use platform"
-        style={styles.mainHeading}
+        style={styles.title}
       />
       <div className={styles.gridContainer}>
         {data.map((d) => {
@@ -23,7 +23,7 @@ function AdditionalFeature({ data }) {
             <div className={styles.gridItem} key={d.id}>
               <Icon icon={d.icon} />
               <MainHeading title={d.title} className={styles.heading} />
-              <Paragraph description={d.description} />
+              <Paragraph style={styles.paragraph} description={d.description} />
             </div>
           );
         })}
