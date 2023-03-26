@@ -1,21 +1,23 @@
 import logo from "../../assets/images/features-list/logo.png";
+import { MainHeading } from "../Headings";
+import Paragraph from "../Paragraph";
 import styles from "./featuresList.module.css";
 
-function MainTitle({ title }) {
-  return (
-    <div className={styles.mainTitleContainer}>
-      <h2 className={styles.mainTitle}>{title}</h2>
-    </div>
-  );
-}
+// function MainTitle({ title }) {
+//   return (
+//     <div className={styles.mainTitleContainer}>
+//       <h2 className={styles.mainTitle}>{title}</h2>
+//     </div>
+//   );
+// }
 
-function FeatureListDescription({ description, style }) {
-  return (
-    <div className={styles.descriptionContainer}>
-      <p className={style}>{description}</p>
-    </div>
-  );
-}
+// function FeatureListDescription({ description, style }) {
+//   return (
+//     <div className={styles.descriptionContainer}>
+//       <p className={style}>{description}</p>
+//     </div>
+//   );
+// }
 
 function FeatureListIcons({ icon, alt }) {
   return (
@@ -29,8 +31,11 @@ function FeaturesList({ data }) {
   return (
     <div className={styles.featuresListContainer}>
       <FeatureListIcons icon={logo} alt={"Company logotype"} />
-      <MainTitle title={"From the world's #1 brand for mental fitness"} />
-      <FeatureListDescription
+      <MainHeading
+        style={styles.title}
+        title={"From the world's #1 brand for mental fitness"}
+      />
+      <Paragraph
         style={styles.firstChild}
         description={
           "Calm is the leading mental health brand with the #1 App for Sleep, Meditation and Relaxation™"
@@ -40,7 +45,7 @@ function FeaturesList({ data }) {
         {data.map((d) => (
           <div className={styles.flexContainer} key={d.id}>
             <FeatureListIcons icon={d.icon} alt={"Feature icon"} />
-            <FeatureListDescription
+            <Paragraph
               description={d.description}
               style={styles.restOfChilds}
             />

@@ -8,12 +8,13 @@
   align-items: center;
 }
 
-.bannerTitle {
+.title {
   color: var(--clr-light);
-  ;
   font-size: 2.2rem;
   font-weight: 300;
-  padding: 1.8725rem .625rem;
+  margin: 1.5625rem 0 0;
+  padding: 0 .625rem 1.25rem;
+  text-align: center;
 }
 
 .bannerLink {
@@ -40,7 +41,7 @@
     justify-content: center;
   }
 
-  .bannerTitle {
+  .title {
     font-size: 2.375rem;
     margin: .625rem 0 0;
     padding: 0 0 1.25rem;

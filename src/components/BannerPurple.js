@@ -1,10 +1,11 @@
 import { NavLink } from "react-router-dom";
+import { MainHeading } from "./Headings";
 import styles from "./bannerPurple.module.css";
 
 function BannerPurple({ title, text }) {
   return (
     <div className={styles.bannerContainer}>
-      <h3 className={styles.bannerTitle}>{title}</h3>
+      <MainHeading title={title} style={styles.title} />
       <NavLink className={styles.bannerLink} to="/">
         {text}
       </NavLink>
