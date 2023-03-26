@@ -1,9 +1,9 @@
 import styles from "./hedings.module.css";
 
-export function SubHeading({ title }) {
+export function SubHeading({ title, style }) {
   return (
-    <div className="subHeadingContainer">
-      <h3 className="subHeading">{title}</h3>
+    <div className={styles.subHeadingContainer}>
+      <h3 className={`${styles.subHeading} ${style}`}>{title}</h3>
     </div>
   );
 }

@@ -1,17 +1,10 @@
+import { SubHeading } from "../Headings";
 import styles from "./featureSection.module.css";
 
 function FeatureImage({ img }) {
   return (
     <div className={styles.featureImageContainer}>
       <img src={img} alt="App feature images" className={styles.featureImage} />
-    </div>
-  );
-}
-
-function FeatureTitle({ title }) {
-  return (
-    <div className={styles.featureTitleContainer}>
-      <h3 className={styles.featureTitle}>{title}</h3>
     </div>
   );
 }
@@ -40,7 +33,7 @@ function FeatureSection({ data }) {
           <div className={styles.flexContainer} key={d.id}>
             <FeatureImage img={d.image} />
             <div className={styles.flexItem}>
-              <FeatureTitle title={d.title} />
+              <SubHeading title={d.title} style={styles.title} />
               <FeatureDescription
                 description={d.description}
                 splitWord={"*"}
