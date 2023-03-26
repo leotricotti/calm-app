@@ -61,6 +61,12 @@ function MainVideo() {
       }
     }
 
+    if (window.innerWidth > 767) {
+      setBacgroundImage(true);
+    } else {
+      setBacgroundImage(false);
+    }
+
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
