@@ -1,6 +1,8 @@
 .paragraphContainer {
   width: 100%;
   padding: 0 .5rem;
+  max-width: 728px;
+  margin: 0 auto;
 }
 
 .paragraph {

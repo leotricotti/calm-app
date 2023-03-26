@@ -36,15 +36,11 @@
 
   .paragraph {
     font-size: 1.5rem;
-    line-height: 1.9375rem;
-    margin: .5rem 0 2.5rem;
-    padding: 0 3.0625rem;
   }
 
   .paragraph,
   .title {
     max-width: 728px;
-    margin: 0 auto;
   }
 }
 

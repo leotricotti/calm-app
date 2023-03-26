@@ -24,8 +24,7 @@ function HeroSection() {
         />
         <Paragraph
           description="Designed to support payers, plan sponsors, and providers, Calm Health offers evidence-based mental health programs and tools focused on anxiety and depression."
-          container={styles.containerParagraph}
-          paragraph={styles.paragraphHeroSection}
+          style={styles.paragraph}
         />
       </div>
       <HeroVideo video={heroVideos} />
