@@ -18,15 +18,28 @@
 }
 
 .title {
+  color: var(--clr-textDarkBlue);
+  font-size: 2.25rem;
+  font-weight: 300;
+  line-height: 3rem;
+  margin: 1.250rem 0;
+  padding: 0 .3125rem;
+  text-align: center;
+}
+
+.subTitle {
   color: var(--clr-textLightBlue);
   font-size: 1.5rem;
+  margin: 1.25rem 0;
   font-weight: 300;
   line-height: 1.875rem;
-  margin: 1.250rem 0;
 }
 
 .paragraph {
-  font-weight: 400;
+  font-size: .875rem;
+  font-weight: 300;
+  margin-bottom: 1.25rem;
+
 }
 
 @media(min-width: 480px) {

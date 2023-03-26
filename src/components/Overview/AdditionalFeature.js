@@ -1,4 +1,5 @@
 import { MainHeading } from "../Headings";
+import { SubHeading } from "../Headings";
 import Paragraph from "../Paragraph";
 import styles from "./additionalFeature.module.css";
 
@@ -22,7 +23,7 @@ function AdditionalFeature({ data }) {
           return (
             <div className={styles.gridItem} key={d.id}>
               <Icon icon={d.icon} />
-              <MainHeading title={d.title} className={styles.heading} />
+              <SubHeading title={d.title} style={styles.subTitle} />
               <Paragraph style={styles.paragraph} description={d.description} />
             </div>
           );
