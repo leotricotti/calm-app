@@ -44,13 +44,11 @@ Variables
 }
 
 body {
+  max-width: 1400px;
+  margin: 0 auto;
   font-family: var(--ff-primary);
   background: var(--clr-light);
   color: var(--clr-dark);
-  line-height: 1.250rem;
-  font-size: 0.875rem;
-  display: flex;
-  flex-direction: column;
   position: relative;
 }
 

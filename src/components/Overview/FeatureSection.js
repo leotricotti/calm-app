@@ -1,4 +1,5 @@
 import { SubHeading } from "../Headings";
+import Paragraph from "../Paragraph";
 import styles from "./featureSection.module.css";
 
 function FeatureImage({ img }) {
@@ -17,9 +18,11 @@ function FeatureDescription({ description, splitWord }) {
   return (
     <div className={styles.featureDescriptionContainer}>
       {paragraphs.map((paragraph, index) => (
-        <p key={index} className={styles.featureDescription}>
-          {paragraph}
-        </p>
+        <Paragraph
+          key={index}
+          style={styles.paragraph}
+          description={paragraph}
+        />
       ))}
     </div>
   );

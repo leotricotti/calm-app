@@ -26,6 +26,16 @@
   opacity: .4;
 }
 
+.paragraph {
+  color: var(--clr-textLightBlue);
+  font-size: 1.125rem;
+  font-weight: 200;
+  line-height: 1.625rem;
+  text-align: center;
+  margin: 1.25rem 0 1.875rem;
+  padding: 0 .625rem;
+}
+
 @media(min-width: 480px) {
   .title {
     top: 1rem;
@@ -36,11 +46,6 @@
 
   .paragraph {
     font-size: 1.5rem;
-  }
-
-  .paragraph,
-  .title {
-    max-width: 728px;
   }
 }
 

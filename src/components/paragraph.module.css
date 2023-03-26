@@ -5,12 +5,9 @@
   margin: 0 auto;
 }
 
-.paragraph {
-  color: var(--clr-textLightBlue);
-  font-size: 1.125rem;
-  font-weight: 200;
-  line-height: 1.625rem;
-  text-align: center;
-  margin: 1.25rem 0 1.875rem;
-  padding: 0 .625rem;
+@media(min-width: 480px) {
+  .paragraphContainer {
+    max-width: 728px;
+    margin: auto;
+  }
 }
