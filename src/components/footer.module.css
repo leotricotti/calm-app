@@ -10,7 +10,6 @@
 }
 
 .titleContainer {
-  width: 100%;
   max-width: 728px;
   margin: 2.5rem 0 0;
 }
@@ -53,8 +52,7 @@
 @media(min-width: 480px) {
   .footerNav {
     display: flex;
-    justify-content: center;
-    padding-left: 3rem;
+    justify-content: space-between;
   }
 }
 
