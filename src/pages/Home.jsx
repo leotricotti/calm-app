@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import featureSectionData from "../assets/data/feactureSectionData";
 import additionalFeatureData from "../assets/data/additionalFeatureData";
 import featureListData from "../assets/data/featureListData";
@@ -11,6 +12,10 @@ import FeaturesList from "../components/Overview/FeaturesList";
 import Footer from "../components/Footer";
 
 function Home() {
+  useEffect(() => {
+    document.title = "Calm Health - Digital Mental Health App & Programs";
+  }, []);
+
   return (
     <>
       <NavHeader />

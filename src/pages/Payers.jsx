@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import payersFeatureListData from "../assets/data/payersFeatureListData";
 import NavHeader from "../components/NavHeader";
 import BannerSection from "../components/Payers/BannerSection";
@@ -7,6 +8,10 @@ import BannerPurple from "../components/BannerPurple";
 import Footer from "../components/Footer";
 
 function Payers() {
+  useEffect(() => {
+    document.title = "Calm Health for Plan Member & Employee Mental Health";
+  }, []);
+
   return (
     <div>
       <NavHeader />
