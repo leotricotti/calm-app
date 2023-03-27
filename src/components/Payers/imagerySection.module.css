@@ -1,23 +1,22 @@
 .payersImageryContainer {
   width: 100%;
-  height: auto;
-}
-
-.payersImageContainer {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin: auto;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2.5rem;
+  position: absolute;
+  top: 20%;
 }
 
 .payersImageContainer:first-child {
-  position: absolute;
-  top: 36rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .payersImageContainer:nth-child(2) {
-  width: 94%;
-  margin-top: 9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .payersImage {
