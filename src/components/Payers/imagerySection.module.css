@@ -5,7 +5,7 @@
   gap: 2.5rem;
   padding: 0 .625rem;
   position: absolute;
-  top: 33rem;
+  top: 30rem;
 }
 
 .payersImageContainer:first-child {
@@ -28,8 +28,8 @@
   .payersImageryContainer {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
-    gap: 0;
-    top: 45rem;
+    gap: 2rem;
+    top: 42rem;
   }
 
   .payersImageContainer:first-child {
@@ -37,7 +37,7 @@
   }
 
   .payersImageContainer:nth-child(2) {
-    display: flex-start;
+    justify-content: flex-start;
   }
 
   .payersImage {
