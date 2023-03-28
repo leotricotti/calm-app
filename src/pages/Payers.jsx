@@ -10,8 +10,6 @@ import Footer from "../components/Footer";
 function Payers() {
   const [elementHeight, setElementHeight] = useState(null);
 
-  console.log(elementHeight);
-
   useEffect(() => {
     document.title = "Calm Health for Plan Member & Employee Mental Health";
   }, []);
