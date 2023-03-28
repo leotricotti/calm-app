@@ -6,7 +6,7 @@ function useUpdateMarginTop(elementClassName) {
   useEffect(() => {
     function updateMarginTop() {
       const elementHeight = ref.current.offsetHeight;
-      const elementUnder = document.querySelector(`.${elementClassName}`);
+      const elementUnder = document.querySelector(`${elementClassName}`);
       if (elementUnder) {
         elementUnder.style.marginTop = elementHeight + "px";
       }
