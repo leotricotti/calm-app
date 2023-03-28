@@ -17,7 +17,11 @@ function ImagerySection({ setElementHeight, setInitialState }) {
   useEffect(() => {
     function updateMarginTop() {
       const elementHeight = ref.current.offsetHeight;
-      setElementHeight(elementHeight);
+      if (elementHeight > 500) {
+        setElementHeight(elementHeight - 350);
+      } else {
+        setElementHeight(elementHeight - 100);
+      }
     }
     updateMarginTop();
 

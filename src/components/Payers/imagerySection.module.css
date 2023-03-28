@@ -3,8 +3,9 @@
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   gap: 2.5rem;
+  padding: 0 .625rem;
   position: absolute;
-  top: 35rem;
+  top: 33rem;
 }
 
 .payersImageContainer:first-child {
@@ -21,4 +22,25 @@
 
 .payersImage {
   width: 80%;
+}
+
+@media (min-width: 480px) {
+  .payersImageryContainer {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    gap: 0;
+    top: 45rem;
+  }
+
+  .payersImageContainer:first-child {
+    justify-content: flex-end;
+  }
+
+  .payersImageContainer:nth-child(2) {
+    display: flex-start;
+  }
+
+  .payersImage {
+    width: 82%;
+  }
 }
