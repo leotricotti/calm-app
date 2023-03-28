@@ -2,9 +2,12 @@ import { SubHeading } from "../Headings";
 import Paragraph from "../Paragraph";
 import styles from "./payersFeatureList.module.css";
 
-function PayersFeatureList({ data }) {
+function PayersFeatureList({ data, elementHeight }) {
   return (
-    <div className={styles.featureListContainer} id="elementUnder">
+    <div
+      className={styles.featureListContainer}
+      style={{ marginTop: elementHeight + ".px" }}
+    >
       {data.map((d) => {
         return (
           <div key={d.id}>

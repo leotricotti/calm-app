@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import payersFeatureListData from "../assets/data/payersFeatureListData";
 import NavHeader from "../components/NavHeader";
 import BannerSection from "../components/Payers/BannerSection";
@@ -8,6 +8,10 @@ import BannerPurple from "../components/BannerPurple";
 import Footer from "../components/Footer";
 
 function Payers() {
+  const [elementHeight, setElementHeight] = useState(null);
+
+  console.log(elementHeight);
+
   useEffect(() => {
     document.title = "Calm Health for Plan Member & Employee Mental Health";
   }, []);
@@ -16,8 +20,11 @@ function Payers() {
     <div>
       <NavHeader />
       <BannerSection />
-      <ImagerySection />
-      <PayersFeatureList data={payersFeatureListData} />
+      <ImagerySection setElementHeight={setElementHeight} />
+      <PayersFeatureList
+        data={payersFeatureListData}
+        elementHeight={elementHeight}
+      />
       <BannerPurple
         title={"Want to learn more?"}
         text={"Request Information"}
