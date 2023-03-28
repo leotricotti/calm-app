@@ -11,7 +11,7 @@ function BackgroundImage({ image, alt }) {
   );
 }
 
-function ImagerySection({ setElementHeight }) {
+function ImagerySection({ setElementHeight, setInitialState }) {
   const ref = useRef(null);
 
   useEffect(() => {
@@ -19,11 +19,13 @@ function ImagerySection({ setElementHeight }) {
       const elementHeight = ref.current.offsetHeight;
       setElementHeight(elementHeight);
     }
-
     updateMarginTop();
+
+    window.addEventListener("load", updateMarginTop);
     window.addEventListener("resize", updateMarginTop);
     return () => {
       window.removeEventListener("resize", updateMarginTop);
+      window.addEventListener("load", updateMarginTop);
     };
   }, [setElementHeight]);
 

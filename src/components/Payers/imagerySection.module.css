@@ -4,7 +4,7 @@
   grid-template-rows: repeat(2, 1fr);
   gap: 2.5rem;
   position: absolute;
-  top: 20%;
+  top: 35rem;
 }
 
 .payersImageContainer:first-child {
