@@ -10,10 +10,14 @@ function FooterTitle({ title, children }) {
   );
 }
 
-function FooterItem({ url, item }) {
+function FooterItem({ url, item, targetBlank }) {
   return (
     <div className={styles.itemContainer}>
-      <NavLink className={styles.item} to={url} target={"_blank"}>
+      <NavLink
+        className={styles.item}
+        to={url}
+        target={`${targetBlank ? "_blank" : ""}`}
+      >
         {item}
       </NavLink>
     </div>
@@ -35,25 +39,43 @@ function Footer({ data }) {
     <div className={styles.footerContainer}>
       <div className={styles.footerNav}>
         <FooterTitle title="Company">
-          <FooterItem url="/" item="Overview" />
-          <FooterItem url="/payers" item="Employers & Payers" />
-          <FooterItem url="/providers" item="Providers" />
-          <FooterItem url="/press" item="Press" />
+          <FooterItem url="/" item="Overview" targetBlank={false} />
+          <FooterItem
+            url="/payers"
+            item="Employers & Payers"
+            targetBlank={false}
+          />
+          <FooterItem url="/providers" item="Providers" targetBlank={false} />
+          <FooterItem url="/press" item="Press" targetBlank={false} />
         </FooterTitle>
         <FooterTitle title="Solutions">
-          <FooterItem url="https://www.calm.com/es" item="Calm" />
+          <FooterItem
+            url="https://www.calm.com/es"
+            item="Calm"
+            targetBlank={true}
+          />
           <FooterItem
             url="https://business.calm.com/"
             item="Calm for Bussines"
+            targetBlank={true}
           />
-          <FooterItem url="/" item="Calm Healt" />
+          <FooterItem url="/" item="Calm Healt" targetBlank={true} />
         </FooterTitle>
         <FooterTitle title="More Information">
-          <FooterItem url="/learn-more" item="Request Information" />
-          <FooterItem url="https://rb.gy/nkxrpi" item="Request Information" />
+          <FooterItem
+            url="/learn-more"
+            item="Request Information"
+            targetBlank={true}
+          />
+          <FooterItem
+            url="https://rb.gy/nkxrpi"
+            item="Request Information"
+            targetBlank={true}
+          />
           <FooterItem
             url="https://www.linkedin.com/company/calmhealth/"
             item="Linkedln"
+            targetBlank={true}
           />
         </FooterTitle>
       </div>
