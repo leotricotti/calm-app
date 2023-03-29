@@ -20,7 +20,7 @@ function ImagerySection({ setElementHeight, setInitialState }) {
       if (elementHeight > 500) {
         setElementHeight(elementHeight - 400);
       } else {
-        setElementHeight(elementHeight - 120);
+        setElementHeight(elementHeight - 150);
       }
     }
     updateMarginTop();
