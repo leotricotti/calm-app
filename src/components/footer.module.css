@@ -46,6 +46,7 @@
 
 .copyright {
   color: var(--clr-featureDescription);
+  font-size: .875rem;
   text-align: center;
 }
 

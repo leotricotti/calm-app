@@ -44,3 +44,18 @@
     width: 82%;
   }
 }
+
+@media (min-width: 768px) {
+  .payersImageryContainer {
+    max-width: 728px;
+    margin-left: 50%;
+    margin-right: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (min-width: 992px) {
+  .payersImageryContainer {
+    max-width: 940px;
+  }
+}

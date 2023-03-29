@@ -43,14 +43,26 @@
 
 @media(min-width: 768px) {
   .title {
+    max-width: 728px;
     font-size: 3.75rem;
     line-height: 4.5rem;
     margin-top: 5rem;
   }
 
   .subTitle {
+    max-width: 728px;
     font-size: 1.625rem;
     line-height: 2.25rem;
     padding: 0 4.375rem;
+  }
+}
+
+@media(min-width: 992px) {
+  .title {
+    max-width: 940px;
+  }
+
+  .subTitle {
+    max-width: 940px;
   }
 }
