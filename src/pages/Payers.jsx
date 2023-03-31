@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import payersFeatureListData from "../assets/data/payersFeatureListData";
 import NavHeader from "../components/NavHeader";
-import BannerSection from "../components/Payers/BannerSection";
+import HeroSection from "../components/HeroSection";
 import ImagerySection from "../components/Payers/ImagerySection";
 import PayersFeatureList from "../components/Payers/PayersFeatureList";
 import BannerPurple from "../components/BannerPurple";
@@ -18,7 +18,12 @@ function Payers() {
   return (
     <>
       <NavHeader />
-      <BannerSection />
+      <HeroSection
+        title={"Support the mental health of your members with Calm Health"}
+        subtitle={
+          "Calm Health offers evidence-based, condition-focused mental health programs that can easily integrate into existing care management or behavioral health solutions."
+        }
+      />
       <ImagerySection
         setElementHeight={setElementHeight}
         setInitialState={setInitialState}

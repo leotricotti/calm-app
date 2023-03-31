@@ -3,7 +3,7 @@ import featureSectionData from "../assets/data/feactureSectionData";
 import additionalFeatureData from "../assets/data/additionalFeatureData";
 import featureListData from "../assets/data/featureListData";
 import NavHeader from "../components/NavHeader";
-import HeroSection from "../components/Overview/HeroSection";
+import HeroSection from "../components/HeroSection";
 import MainVideo from "../components/Overview/MainVideo";
 import FeatureSection from "../components/Overview/FeatureSection";
 import AdditionalFeature from "../components/Overview/AdditionalFeature";
