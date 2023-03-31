@@ -23,7 +23,7 @@ function Home() {
       <NavHeader />
       <HeroBackgroundVideo videoSrc={backgroundVideo} />
       <HeroSection
-        background={{ background: backgroundVideo }}
+        style={{ position: "absolute", top: "6rem" }}
         title="Connecting the dots for care of the mind and body"
         subtitle="Designed to support payers, plan sponsors, and providers, Calm Health offers evidence-based mental health programs and tools focused on anxiety and depression."
       />
