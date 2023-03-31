@@ -19,6 +19,7 @@ function Payers() {
     <>
       <NavHeader />
       <HeroSection
+        style={{ backgroundColor: "var(  --clr-payersHeroBackground)" }}
         title={"Support the mental health of your members with Calm Health"}
         subtitle={
           "Calm Health offers evidence-based, condition-focused mental health programs that can easily integrate into existing care management or behavioral health solutions."

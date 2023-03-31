@@ -23,12 +23,11 @@ Variables
   --clr-textViolet: #592b9a;
   --clr-overlay: rgba(0, 0, 0, 0.9);
   --clr-featureDescription: #1a1a1a;
-  --clr-payerHeroBackground: #592b9a;
+  --clr-bannerBackground: #592b9a;
   --clr-footerBackground: #f2f2f2;
-  --clr-payersBannerBackground: #e7f2ffb3;
+  --clr-payersHeroBackground: #e7f2ffb3;
   --clr-providersBannerBackground: #f9f0ff;
   --ff-primary: 'Prompt', sans-serif;
-  --backgroundVideo: URL('../src/assets/images/hero/background-video.webm');
 }
 
 /*
