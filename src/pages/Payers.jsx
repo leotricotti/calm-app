@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import payersFeatureListData from "../assets/data/payersFeatureListData";
 import NavHeader from "../components/NavHeader";
 import HeroSection from "../components/HeroSection";
@@ -8,9 +8,6 @@ import BannerPurple from "../components/BannerPurple";
 import Footer from "../components/Footer";
 
 function Payers() {
-  const [initialState, setInitialState] = useState(null);
-  const [elementHeight, setElementHeight] = useState(initialState);
-
   useEffect(() => {
     document.title = "Calm Health for Plan Member & Employee Mental Health";
   }, []);
@@ -25,14 +22,8 @@ function Payers() {
           "Calm Health offers evidence-based, condition-focused mental health programs that can easily integrate into existing care management or behavioral health solutions."
         }
       />
-      <ImagerySection
-        setElementHeight={setElementHeight}
-        setInitialState={setInitialState}
-      />
-      <PayersFeatureList
-        data={payersFeatureListData}
-        elementHeight={elementHeight}
-      />
+      <ImagerySection />
+      <PayersFeatureList data={payersFeatureListData} />
       <BannerPurple
         title={"Want to learn more?"}
         text={"Request Information"}
