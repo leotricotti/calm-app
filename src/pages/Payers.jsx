@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import payersFeatureListData from "../assets/data/payersFeatureListData";
 import NavHeader from "../components/NavHeader";
-import HeroSection from "../components/HeroSection";
+import PayersHeroSection from "../components/Payers/PayersHeroSection";
 import ImagerySection from "../components/Payers/ImagerySection";
 import PayersFeatureList from "../components/Payers/PayersFeatureList";
 import BannerPurple from "../components/BannerPurple";
@@ -15,7 +15,7 @@ function Payers() {
   return (
     <>
       <NavHeader />
-      <HeroSection
+      <PayersHeroSection
         style={{ backgroundColor: "var(  --clr-payersHeroBackground)" }}
         title={"Support the mental health of your members with Calm Health"}
         subtitle={
