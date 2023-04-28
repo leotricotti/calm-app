@@ -13,7 +13,7 @@ import BannerPurple from "../components/BannerPurple";
 import FeaturesList from "../components/Overview/FeaturesList";
 import Footer from "../components/Footer";
 
-function Home() {
+function Overview() {
   useEffect(() => {
     document.title = "Calm Health - Digital Mental Health App & Programs";
   }, []);
@@ -40,4 +40,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Overview;

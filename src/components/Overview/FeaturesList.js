@@ -3,22 +3,6 @@ import { MainHeading } from "../Headings";
 import Paragraph from "../Paragraph";
 import styles from "./featuresList.module.css";
 
-// function MainTitle({ title }) {
-//   return (
-//     <div className={styles.mainTitleContainer}>
-//       <h2 className={styles.mainTitle}>{title}</h2>
-//     </div>
-//   );
-// }
-
-// function FeatureListDescription({ description, style }) {
-//   return (
-//     <div className={styles.descriptionContainer}>
-//       <p className={style}>{description}</p>
-//     </div>
-//   );
-// }
-
 function FeatureListIcons({ icon, alt }) {
   return (
     <div className={styles.featuresListIconContainer}>
