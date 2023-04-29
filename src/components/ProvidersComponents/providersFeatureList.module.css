@@ -24,17 +24,25 @@
 
 @media(min-width: 480px) {
   .featureListContainer {
-    margin-left: .9375rem;
-    margin-right: .9375rem;
+    margin: 3.75rem 0;
+    padding-left: 1.250rem;
+    padding-right: 1.250rem;
+  }
+
+  .subTitle {
+    font-size: 1.75rem;
+    padding: 0 2.5rem 1rem 2.5rem;
+    line-height: 2.375rem;
+  }
+
+  .paragraph {
+    padding: 0 2.5rem;
   }
 }
 
 @media(min-width: 768px) {
   .featureListContainer {
     max-width: 728px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
     margin-left: auto;
     margin-right: auto;
   }
@@ -55,7 +63,7 @@
 
 @media(min-width: 992px) {
   .featureListContainer {
-    max-width: 940px;
+    max-width: 760px;
     margin-left: auto;
     margin-right: auto;
   }
