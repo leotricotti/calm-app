@@ -1,13 +1,10 @@
-import { SubHeading } from "./Headings";
-import Paragraph from "./Paragraph";
-import styles from "./featureList.module.css";
+import { SubHeading } from "../Headings";
+import Paragraph from "../Paragraph";
+import styles from "./providersFeatureList.module.css";
 
-function PayersFeatureList({ data, elementHeight }) {
+function PayersFeatureList({ data }) {
   return (
-    <div
-      className={styles.featureListContainer}
-      style={{ marginTop: elementHeight + ".px" }}
-    >
+    <div className={styles.featureListContainer}>
       {data.map((d) => {
         return (
           <div key={d.id}>
