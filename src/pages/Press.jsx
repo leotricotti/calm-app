@@ -6,7 +6,13 @@ function Press() {
   return (
     <div>
       <NavHeader />
-      <HeroSection />
+      <HeroSection
+        style={{ backgroundColor: "var(--clr-pressHeroBackground)" }}
+        title={"News & Media"}
+        subtitle={
+          "Here’s the latest news and announcements on Calm Health. To get in touch with our PR team, please email press@calm.com"
+        }
+      />
       <Footer />
     </div>
   );
