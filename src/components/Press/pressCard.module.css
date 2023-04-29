@@ -14,11 +14,33 @@
 .cardTitle {
   color: var(--clr-pressCardTitle);
   font-size: .875rem;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 1px;
   margin: .625rem 0 .3125rem 0;
 }
 
 .cardText {
+  color: var(--clr-pressCardText);
   font-size: 1.125rem;
+  font-weight: 200;
+  line-height: 1.625rem;
+}
+
+.linkContainer {
+  display: flex;
+  position: relative;
+}
+
+.navLink {
+  color: var(--clr-pressCardLink);
+  font-size: .875rem;
+  font-weight: 400;
+  margin: .635rem 0 0;
+}
+
+.svg {
+  color: var(--clr-pressCardLink);
+  position: absolute;
+  top: .66rem;
+  left: 5.5rem;
 }

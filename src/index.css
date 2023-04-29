@@ -29,6 +29,8 @@ Variables
   --clr-providersHeroBackground: #f9f0ff;
   --clr-pressHeroBackground: #f2f2f2;
   --clr-pressCardTitle: #1b3e8e;
+  --clr-pressCardText: #383838;
+  --clr-pressCardLink: #007eba;
   --ff-primary: 'Prompt', sans-serif;
 }
 
