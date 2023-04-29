@@ -12,7 +12,8 @@
   font-size: 1.5rem;
   line-height: 1.875rem;
   font-weight: 300;
-  margin: 1.250rem 0;
+  text-align: center;
+  margin: 0 1.250rem 1.250rem;
 }
 
 .paragraph {
