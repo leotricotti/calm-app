@@ -1,9 +1,7 @@
 .heroSectionContainer {
   width: 100%;
   height: auto;
-  display: flex;
   background-size: cover;
-  flex-direction: column;
   padding: 0 .625rem;
 }
 
