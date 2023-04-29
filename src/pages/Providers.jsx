@@ -1,6 +1,8 @@
+import providersFeatureListData from "../assets/data/providersFeatureListData";
 import NavHeader from "../components/NavHeader";
 import HeroSection from "../components/HeroSection";
 import HeroImageProviders from "../components/ProvidersComponents/HeroImageProviders";
+import FeatureList from "../components/FeatureList";
 import BannerPurple from "../components/BannerPurple";
 import Footer from "../components/Footer";
 
@@ -14,6 +16,7 @@ function Providers() {
         subtitle="Calm Health offers evidence-based, condition-focused mental health programs that are aligned with providers advice and workflows."
       />
       <HeroImageProviders />
+      <FeatureList data={providersFeatureListData} />
       <BannerPurple
         title={"Want to learn more?"}
         text={"Request Information"}
