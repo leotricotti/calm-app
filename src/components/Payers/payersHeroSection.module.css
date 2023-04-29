@@ -58,6 +58,10 @@
 }
 
 @media(min-width: 992px) {
+  .heroSectionContainer {
+    height: 35rem;
+  }
+
   .title {
     max-width: 940px;
   }
