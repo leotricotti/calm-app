@@ -23,14 +23,6 @@ const pressCardData = [
     link: "https://www.fastcompany.com/90796752/exclusive-calm-expands-to-offer-clinical-mental-health-programs-and-medication-tracking",
     linkText: "Read Article →",
   },
-  {
-    id: "4",
-    image: require("../images/press-card/calm.png"),
-    title: "TECHCRUNCH",
-    text: "Calm launches clinical mental health offering, Calm Health",
-    link: "https://techcrunch.com/2022/10/18/calm-launches-clinical-mental-health-offering-calm-health/",
-    linkText: "Read Article →",
-  },
 ];
 
 export default pressCardData;
