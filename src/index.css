@@ -31,6 +31,8 @@ Variables
   --clr-pressCardTitle: #1b3e8e;
   --clr-pressCardText: #383838;
   --clr-pressCardLink: #007eba;
+  --clr-dotBackground: #22222266;
+  --clr-dotBackgroundActive: #222;
   --ff-primary: 'Prompt', sans-serif;
 }
 

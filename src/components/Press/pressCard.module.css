@@ -37,10 +37,3 @@
   font-weight: 400;
   margin: .635rem 0 0;
 }
-
-.svg {
-  color: var(--clr-pressCardLink);
-  position: absolute;
-  top: .66rem;
-  left: 5.5rem;
-}

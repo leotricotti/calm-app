@@ -3,6 +3,7 @@ import pressCardData from "../assets/data/pressCardData";
 import NavHeader from "../components/NavHeader";
 import HeroSection from "../components/HeroSection";
 import PressCard from "../components/Press/PressCard";
+import PressCardSlider from "../components/Press/PressCardSlider";
 import BannerPurple from "../components/BannerPurple";
 import Footer from "../components/Footer";
 
@@ -25,6 +26,7 @@ function Press() {
         }
       />
       <PressCard data={pressCardData} />
+      <PressCardSlider />
       <BannerPurple
         title={"Download images and logos from our Press Kit"}
         text={"Download Press Kit"}
