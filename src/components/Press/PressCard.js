@@ -1,9 +1,8 @@
 import { NavLink } from "react-router-dom";
-import pressCardData from "../../assets/data/pressCardData";
 import styles from "./pressCard.module.css";
 
-function PressCard() {
-  return pressCardData.map((data) => {
+function PressCard({ data }) {
+  return data.map((data) => {
     return (
       <div key={data.id} className={styles.pressCardContainer}>
         <img
