@@ -1,18 +1,18 @@
 .slideContainer {
-  width: 100%;
-  height: min-content;
-  padding: 2rem .9375rem 1rem .9375rem;
-
+  width: 500%;
+  height: auto;
+  position: relative;
+  display: flex;
+  overflow: hidden;
 }
 
 .slide {
-  transform: translateX(-120%);
-  height: 0;
-}
-
-.slide:nth-child(1) {
-  transform: translateX(0);
-  height: auto;
+  width: 100%;
+  height: 100%;
+  padding: 2rem .9375rem 1rem .9375rem;
+  background-color: var(--clr-light);
+  transform: translate(0);
+  transition: all .3s ease-in;
 }
 
 .image {
@@ -64,9 +64,10 @@
   height: .625rem;
   background-color: var(--clr-dotBackground);
   border-radius: 1rem;
-  cursor: pointer;
+  transition: all .1s ease-in;
 }
 
 .active {
   background-color: var(--clr-dotBackgroundActive);
+  transition: all .1s ease-in;
 }
