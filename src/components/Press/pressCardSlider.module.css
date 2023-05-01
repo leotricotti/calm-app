@@ -9,7 +9,7 @@
 .slide {
   width: 100%;
   height: 100%;
-  padding: 2rem .9375rem 1rem .9375rem;
+  padding: 2rem .9375rem 0 .9375rem;
   background-color: var(--clr-light);
   transform: translate(0);
   transition: all .3s ease-in;
@@ -56,7 +56,7 @@
   display: flex;
   gap: 1.5rem;
   justify-content: center;
-  padding: 2rem 0 4rem;
+  padding: 0 1rem 4rem;
 }
 
 .dots {
