@@ -1,13 +1,31 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import sliderData from "../../assets/data/sliderData";
 import { NavLink } from "react-router-dom";
 import styles from "./pressCardSlider.module.css";
 
 function Slide({ data, index }) {
-  let transformValue = `translateX(${-index * 100}%)`;
+  const [transformValue, setTransformValue] = useState(
+    `translateX(${-index * 100}%)`
+  );
+
+  useEffect(() => {
+    function handleResize() {
+      const windowSize = window.innerWidth;
+      if (windowSize === 480) setTransformValue(`translateX(${-index * 200}%)`);
+      if (windowSize === 992) setTransformValue(`translateX(${-index * 300}%)`);
+    }
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [transformValue, index]);
 
   return (
-    <div className={styles.slideContainer}>
+    <>
       {data.map((item, i) => (
         <div
           className={styles.slide}
@@ -22,7 +40,7 @@ function Slide({ data, index }) {
           </NavLink>
         </div>
       ))}
-    </div>
+    </>
   );
 }
 
@@ -48,12 +66,12 @@ function PressCardSlider() {
   };
 
   return (
-    <>
-      <div className={styles.pressCardSliderContainer}>
+    <div className={styles.pressCardSliderContainer}>
+      <div className={styles.pressCardSliders}>
         <Slide data={sliderData} index={index} />
       </div>
       <Dots handleClick={handleClick} index={index} />
-    </>
+    </div>
   );
 }
 

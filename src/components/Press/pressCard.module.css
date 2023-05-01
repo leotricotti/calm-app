@@ -37,3 +37,19 @@
   font-weight: 400;
   margin: .635rem 0 0;
 }
+
+@media(min-width: 480px) {
+  .pressCardContainer {
+    max-width: 728px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: auto;
+  }
+}
+
+@media(min-width: 992px) {
+  .pressCardContainer {
+    max-width: 940px;
+  }
+}

@@ -19,6 +19,7 @@ function Press() {
         style={{
           backgroundColor: "var(--clr-pressHeroBackground)",
           height: "auto",
+          padding: "4rem 0",
         }}
         title={"News & Media"}
         subtitle={
