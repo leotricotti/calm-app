@@ -1,8 +1,11 @@
 .heroSectionContainer {
   width: 100%;
-  height: auto;
+  height: 500px;
   background-size: cover;
   padding: .35em .625rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .title {
@@ -28,7 +31,6 @@
   .title {
     font-size: 3rem;
     line-height: 3.9375rem;
-    margin-top: 5.4375rem;
   }
 
   .subTitle {
@@ -44,7 +46,6 @@
     max-width: 728px;
     font-size: 3.75rem;
     line-height: 4.5rem;
-    margin-top: 5rem;
   }
 
   .subTitle {

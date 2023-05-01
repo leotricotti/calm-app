@@ -11,7 +11,10 @@ function Providers() {
     <div>
       <NavHeader />
       <HeroSection
-        style={{ backgroundColor: "var(--clr-providersHeroBackground)" }}
+        style={{
+          backgroundColor: "var(--clr-providersHeroBackground)",
+          height: "auto",
+        }}
         title="Evidence-based solution that helps providers spend time with those who need it most"
         subtitle="Calm Health offers evidence-based, condition-focused mental health programs that are aligned with providers advice and workflows."
       />

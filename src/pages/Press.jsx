@@ -18,7 +18,7 @@ function Press() {
       <HeroSection
         style={{
           backgroundColor: "var(--clr-pressHeroBackground)",
-          margin: "0 0 2rem",
+          height: "auto",
         }}
         title={"News & Media"}
         subtitle={

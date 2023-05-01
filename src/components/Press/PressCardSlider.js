@@ -1,7 +1,7 @@
+import { useState } from "react";
 import sliderData from "../../assets/data/sliderData";
 import { NavLink } from "react-router-dom";
 import styles from "./pressCardSlider.module.css";
-import { useState } from "react";
 
 function Slide({ index, data }) {
   return (
@@ -41,8 +41,6 @@ function Slide({ index, data }) {
 }
 
 function Dots({ handleClick, index }) {
-  console.log(index);
-
   return (
     <div className={styles.dotsContainer}>
       <button
@@ -55,15 +53,21 @@ function Dots({ handleClick, index }) {
       ></button>
       <button
         onClick={() => handleClick(2)}
-        className={`${styles.dots} ${index === 2 ? styles.active : ""}`}
+        className={`${styles.dots} ${styles.dotThree} ${
+          index === 2 ? styles.active : ""
+        }`}
       ></button>
       <button
         onClick={() => handleClick(3)}
-        className={`${styles.dots} ${index === 3 ? styles.active : ""}`}
+        className={`${styles.dots} ${styles.dotFour} ${
+          index === 3 ? styles.active : ""
+        }`}
       ></button>
       <button
         onClick={() => handleClick(4)}
-        className={`${styles.dots} ${index === 4 ? styles.active : ""}`}
+        className={`${styles.dots} ${styles.dotFive} ${
+          index === 4 ? styles.active : ""
+        }`}
       ></button>
     </div>
   );
