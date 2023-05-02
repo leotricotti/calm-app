@@ -4,15 +4,18 @@ import { NavLink } from "react-router-dom";
 import styles from "./pressCardSlider.module.css";
 
 function Slide({ data, index }) {
-  const [transformValue, setTransformValue] = useState(
-    `translateX(${-index * 100}%)`
-  );
+  const [transformValue, setTransformValue] = useState(`translateX(''%)`);
 
   useEffect(() => {
     function handleResize() {
       const windowSize = window.innerWidth;
-      if (windowSize === 480) setTransformValue(`translateX(${-index * 200}%)`);
-      if (windowSize === 992) setTransformValue(`translateX(${-index * 300}%)`);
+      if (windowSize > 480 && windowSize < 992) {
+        setTransformValue(`translateX(${-index * 200}%)`);
+      } else if (windowSize > 992) {
+        setTransformValue(`translateX(${-index * 300}%)`);
+      } else {
+        setTransformValue(`translateX(${-index * 100}%)`);
+      }
     }
 
     handleResize();
