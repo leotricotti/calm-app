@@ -65,6 +65,7 @@
   background-color: var(--clr-dotBackground);
   border-radius: 1rem;
   transition: all .1s ease-in;
+  cursor: pointer;
 }
 
 .active {

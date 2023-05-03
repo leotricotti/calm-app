@@ -1,13 +1,13 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../assets/images/logo/navbar-logo.png";
 import styles from "./navHeader.module.css";
 
 function NavbarLogo({ logo }) {
   return (
-    <NavLink to={"/"} className={styles.logoContainer}>
+    <Link to={"/"} className={styles.logoContainer}>
       <img className={styles.logo} src={logo} alt="Company Logo" />
-    </NavLink>
+    </Link>
   );
 }
 
@@ -51,9 +51,9 @@ function NavItem({ index, url, text }) {
   if (index === 4) {
     return (
       <li className={styles.lastItem}>
-        <NavLink className={styles.lastLink} to={url} key={index}>
+        <Link className={styles.lastLink} to={url} key={index}>
           {text}
-        </NavLink>
+        </Link>
       </li>
     );
   } else {

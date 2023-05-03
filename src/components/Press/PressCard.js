@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import styles from "./pressCard.module.css";
 
 function PressCard({ data }) {
@@ -14,9 +14,14 @@ function PressCard({ data }) {
             />
             <h2 className={styles.cardTitle}>{data.title}</h2>
             <p className={styles.cardText}>{data.text}</p>
-            <NavLink to={data.link} className={styles.linkContainer}>
+            <Link
+              to={data.link}
+              className={styles.linkContainer}
+              target="_blank"
+              rel="noreferrer noopener"
+            >
               <p className={styles.navLink}>{data.linkText}</p>
-            </NavLink>
+            </Link>
           </div>
         );
       })}

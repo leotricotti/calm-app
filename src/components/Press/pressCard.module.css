@@ -1,7 +1,7 @@
 .pressCardContainer {
   width: 100%;
   height: auto;
-  padding: 1rem .9375rem 1rem .9375rem;
+  padding: 3rem .9375rem 1rem .9375rem;
 }
 
 .cardImg {
@@ -45,11 +45,13 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     margin: auto;
+    padding-top: 4rem;
   }
 }
 
 @media(min-width: 992px) {
   .pressCardContainer {
     max-width: 940px;
+    padding-top: 5rem;
   }
 }
