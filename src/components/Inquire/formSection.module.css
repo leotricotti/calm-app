@@ -1,0 +1,45 @@
+.formContainer {
+  width: 100%;
+  height: auto;
+}
+
+.form {
+  width: 80%;
+  background-color: var(--clr-light);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.250rem 1rem;
+  position: relative;
+  top: -10rem;
+  margin: auto;
+  border-radius: 1rem;
+  gap: .3rem;
+}
+
+.fullNameContainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: 1rem;
+  text-align: left;
+}
+
+.first {
+  display: flex;
+  gap: 2rem;
+}
+
+.label {
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  height: 2.375rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
