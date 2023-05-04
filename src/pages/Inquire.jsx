@@ -1,9 +1,14 @@
+import { useEffect } from "react";
 import NavHeader from "../components/NavHeader";
 import HeroSection from "../components/HeroSection";
 import FormSection from "../components/Inquire/FormSection";
 import Footer from "../components/Footer";
 
 function Inquire() {
+  useEffect(() => {
+    document.title = "Inquire";
+  }, []);
+
   return (
     <div>
       <NavHeader />

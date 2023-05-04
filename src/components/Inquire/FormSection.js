@@ -40,11 +40,7 @@ function Form() {
         <label className={styles.label} htmlFor="message">
           Message
         </label>
-        <textarea
-          className={styles.textarea}
-          id="message"
-          name="message"
-        ></textarea>
+        <input className={styles.input} id="message" name="message"></input>
         <button className={styles.button} type="submit">
           Submit
         </button>
