@@ -10,7 +10,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1.250rem 1rem;
+  padding: 2rem 1rem;
   position: relative;
   top: -10rem;
   margin: auto;
@@ -26,15 +26,22 @@
   text-align: left;
 }
 
-.first {
+.firstName {
   display: flex;
-  gap: 2rem;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.lastName {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
 }
 
 .label {
   width: 100%;
   height: auto;
-  margin-bottom: .5rem;
+  font-weight: 300;
 }
 
 .input {
@@ -44,4 +51,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: 1px solid var(--clr-inputBorderColor);
+}
+
+.select {
+  width: 100%;
+  height: 2.375rem;
+  padding: .5rem;
+  font-size: .875rem;
+  font-weight: 300;
+  background-image: var(--clr-selectBackground)
 }

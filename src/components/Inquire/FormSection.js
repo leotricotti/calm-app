@@ -28,19 +28,32 @@ function Form() {
             />
           </div>
         </div>
-        <label className={styles.label} htmlFor="email">
-          Work Email
+        <label className={styles.label} htmlFor="company">
+          Company
         </label>
         <input
           className={styles.input}
-          type="email"
-          id="email"
-          name="work email"
+          type="text"
+          id="company"
+          name="company"
         />
         <label className={styles.label} htmlFor="message">
-          Message
+          Number of members
         </label>
-        <input className={styles.input} id="message" name="message"></input>
+        <select
+          className={styles.select}
+          id="Members1"
+          name="Members"
+          data-name="Members"
+          required=""
+          class="select-field w-select"
+        >
+          <option value="">Select one...</option>
+          <option value="<50k">Less than 50,000 members</option>
+          <option value="50k-250k">50,000 - 250,000 members</option>
+          <option value="250k-1M">250,000 - 1M members</option>
+          <option value="1M+">More than 1M members</option>
+        </select>
         <button className={styles.button} type="submit">
           Submit
         </button>

@@ -34,6 +34,9 @@ Variables
   --clr-pressCardLink: #007eba;
   --clr-dotBackground: #22222266;
   --clr-dotBackgroundActive: #222;
+  --clr-inputBorderColor: #ccc;
+  --clr-selectBackground: linear-gradient(#e1f2fa, #f4fbff 53%);
+  --clr-selectFocusColor: #007eba;
   --ff-primary: 'Prompt', sans-serif;
 }
 
