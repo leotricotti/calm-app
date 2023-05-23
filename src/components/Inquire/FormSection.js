@@ -1,6 +1,14 @@
+import Select from "react-select";
 import styles from "./formSection.module.css";
 
 function Form() {
+  const options = [
+    { value: "<50k", label: "Less than 50,000 members" },
+    { value: "50k-250k", label: "50,000 - 250,000 members" },
+    { value: "250k-1M", label: "250,000 - 1M members" },
+    { value: "1M+", label: "More than 1M members" },
+  ];
+
   return (
     <div className={styles.formContainer}>
       <form className={styles.form}>
@@ -40,20 +48,7 @@ function Form() {
         <label className={styles.label} htmlFor="message">
           Number of members
         </label>
-        <select
-          className={styles.select}
-          id="Members1"
-          name="Members"
-          data-name="Members"
-          required=""
-          class="select-field w-select"
-        >
-          <option value="">Select one...</option>
-          <option value="<50k">Less than 50,000 members</option>
-          <option value="50k-250k">50,000 - 250,000 members</option>
-          <option value="250k-1M">250,000 - 1M members</option>
-          <option value="1M+">More than 1M members</option>
-        </select>
+        <Select options={options} />
         <button className={styles.button} type="submit">
           Submit
         </button>
