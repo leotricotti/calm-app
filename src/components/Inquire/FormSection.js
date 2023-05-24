@@ -9,6 +9,17 @@ function Form() {
     { value: "1M+", label: "More than 1M members" },
   ];
 
+  const customStyles = {
+    control: (provided, state) => ({
+      ...provided,
+      backgroundColor: "#f3f3f3",
+      background: " var(--clr-selectBackground)",
+      border: state.isFocused ? "1px solid #3898ec" : "1px solid #ccc",
+      borderRadius: "0",
+      boxShadow: "none",
+    }),
+  };
+
   return (
     <div className={styles.formContainer}>
       <form className={styles.form}>
@@ -48,7 +59,12 @@ function Form() {
         <label className={styles.label} htmlFor="message">
           Number of members
         </label>
-        <Select options={options} />
+        <Select
+          value={"Select one..."}
+          options={options}
+          className={styles.select}
+          styles={customStyles}
+        />
         <button className={styles.button} type="submit">
           Submit
         </button>

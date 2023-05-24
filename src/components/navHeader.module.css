@@ -28,23 +28,23 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: .95rem;
+  margin: 0.95rem;
 }
 
 .toggleActive {
   background: var(--clr-accent);
   width: 3rem;
   height: 3rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   margin-right: 0;
 }
 
 .toggleLine {
   display: inline;
-  width: .9rem;
+  width: 0.9rem;
   height: 2px;
   background-color: var(--clr-dark);
-  margin-bottom: .125rem;
+  margin-bottom: 0.125rem;
   border-radius: 1rem;
 }
 
@@ -54,13 +54,12 @@
 
 .navLink {
   font-size: 1rem;
-  ;
   color: var(--clr-dark);
   font-weight: 300;
 }
 
 .linkHover {
-  transition: all .2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .linkHover:hover {
@@ -85,7 +84,7 @@
   position: relative;
   z-index: 10;
   transform: translateY(-120%);
-  transition: all .3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .navvMenuToggle {
@@ -100,7 +99,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all .2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .lastItem:hover {
@@ -109,19 +108,18 @@
 
 .lastLink {
   color: var(--clr-light);
-  ;
-  font-size: .75rem;
+  font-size: 0.75rem;
   font-weight: 300;
 }
 
-@media(min-width:768px) {
+@media (min-width: 768px) {
   .navMenu {
     flex-direction: row;
     justify-content: space-around;
   }
 }
 
-@media(min-width: 992px) {
+@media (min-width: 992px) {
   .navMenu {
     width: 700px;
     padding: 0;
