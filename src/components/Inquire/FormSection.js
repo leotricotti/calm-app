@@ -51,7 +51,7 @@ function Form() {
           Company
         </label>
         <input
-          className={styles.input}
+          className={styles.companyInput}
           type="text"
           id="company"
           name="company"
